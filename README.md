@@ -4,7 +4,7 @@
 
 - Naslovna
 
-- Akcije
+- Akcije (Login, Admin panel za dodavanje/brisanje akcija)
 
 - Usluge
 
