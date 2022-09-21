@@ -10,7 +10,7 @@ const Header = () => {
         <img src={logo} alt="Vetmedika logo" />
       </div>
       <div className="nav">
-        <p>Naslovna</p>
+        <p>Akcije</p>
         <p>Usluge</p>
         <p>Kontakt</p>
       </div>
