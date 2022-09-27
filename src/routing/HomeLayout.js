@@ -8,7 +8,7 @@ export const HomeLayout = () => {
   const outlet = useOutlet();
 
   if (user) {
-    return <Navigate to="/admin-panel" />;
+    return <Navigate to="/admin-panel/akcije" />;
   }
 
   return (
