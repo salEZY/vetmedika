@@ -3,6 +3,7 @@ import Modal from "@mui/material/Modal";
 import { Button, CircularProgress } from "@mui/material";
 import WarningIcon from "@mui/icons-material/Warning";
 import "../Action/styles.css";
+import { axiosAuth as axios } from "../../util/axios-instance";
 
 function getModalStyle() {
   const top = 50;
@@ -25,29 +26,31 @@ const DeleteAction = ({
   const [modalStyle] = React.useState(getModalStyle);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  //   const deleteFilter = async () => {
-  //     try {
-  //       setRefresh(true);
-  //       const res = await axios.delete(`/api/admin/filters/${filter._id}`);
-  //       setModal(false);
-  //       setSeverityHandler("success");
-  //       setSnackbarHandler({
-  //         open: true,
-  //         message: res.data.message,
-  //       });
-  //       setPage(1);
-  //       setRefresh(false);
-  //     } catch (error) {
-  //       setIsSubmitting(false);
-  //       setSeverity("warning");
-  //       setSnackbar({
-  //         open: true,
-  //         message: error?.response?.data?.message
-  //           ? error.response.data.message
-  //           : "Filter delete failed.",
-  //       });
-  //     }
-  //   };
+  const deleteAction = async (id) => {
+    try {
+      setIsSubmitting(true);
+      setRefresh(true);
+      await axios.delete(`/api/action/${id}`);
+      setIsSubmitting(false);
+      setModal(false);
+      // setSeverityHandler("success");
+      // setSnackbarHandler({
+      //   open: true,
+      //   message: res.data.message,
+      // });
+      setRefresh(false);
+    } catch (error) {
+      console.log(error);
+      // setIsSubmitting(false);
+      // setSeverity("warning");
+      // setSnackbar({
+      //   open: true,
+      //   message: error?.response?.data?.message
+      //     ? error.response.data.message
+      //     : "Filter delete failed.",
+      // });
+    }
+  };
 
   const body = (
     <>
@@ -63,7 +66,7 @@ const DeleteAction = ({
             startIcon={
               isSubmitting ? <CircularProgress size="0.9rem" /> : undefined
             }
-            onClick={() => console.log("delete")}
+            onClick={() => deleteAction(data._id)}
             style={{ margin: "10px 0" }}
           >
             Obriši
