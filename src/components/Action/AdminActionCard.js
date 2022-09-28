@@ -12,10 +12,10 @@ const ActionDiv = styled.div`
 const AdminActionCard = ({ action, editAction, deleteAction }) => {
   return (
     <ActionDiv>
-      <h1>{action.naziv}</h1>
-      <p>{action.opis}</p>
+      <h1>{action.title}</h1>
+      <p>{action.description}</p>
       <p>
-        Traje od {action.datumOd} do {action.datumDo}
+        Traje od {action.from} do {action.to}
       </p>
       <div>
         <Button

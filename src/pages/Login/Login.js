@@ -37,12 +37,12 @@ const LeftSide = styled.div`
 `;
 
 const INITIAL_FORM_STATE = {
-  email: "",
+  username: "",
   password: "",
 };
 const FORM_VALIDATION = Yup.object().shape({
-  email: Yup.string()
-    .email("Neispravna lozinka")
+  username: Yup.string()
+    // .email("Neispravna lozinka")
     .required("Unesite email adresu"),
   password: Yup.string()
     .required("Unesite lozinku")
@@ -99,7 +99,7 @@ const Login = () => {
 
                   <Grid item xs={12}>
                     <TextfieldWrapper
-                      name="email"
+                      name="username"
                       variant="standard"
                       label="Email"
                     />

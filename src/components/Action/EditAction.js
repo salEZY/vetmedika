@@ -5,6 +5,7 @@ import * as Yup from "yup";
 import TextfieldWrapper from "../FormsUI/TextfieldWrapper";
 import ButtonWrapper from "../FormsUI/Button/ButtonWrapper";
 import "./styles.css";
+import { axiosAuth as axios } from "../../util/axios-instance";
 
 function getModalStyle() {
   const top = 50;
@@ -18,7 +19,7 @@ function getModalStyle() {
 }
 
 const FORM_VALIDATION = Yup.object().shape({
-  naziv: Yup.string().required("Obavezno polje"),
+  title: Yup.string().required("Obavezno polje"),
 });
 
 export default function EditAction({
@@ -31,38 +32,49 @@ export default function EditAction({
 }) {
   const [modalStyle] = React.useState(getModalStyle);
 
+  const editAction = async (values) => {
+    try {
+      setRefresh(true);
+      await axios.patch(`/api/action/${data._id}`, values);
+      setModal(false);
+      setRefresh(false);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   const body = (
     <>
       <div style={modalStyle} className="paper">
         <h2 className="title">Izmena akcije</h2>
         <Formik
           initialValues={{
-            naziv: data.naziv,
-            opis: data.opis,
-            datumOd: data.datumOd,
-            datumDo: data.datumDo,
+            title: data.title,
+            description: data.description,
+            from: data.from,
+            to: data.to,
           }}
           validationSchema={FORM_VALIDATION}
-          onSubmit={(values) => console.log(values)}
+          onSubmit={(values) => editAction(values)}
         >
           {({ isSubmitting }) => (
             <Form>
               <div className="formDiv">
                 <div className="tableRow">
-                  <span className="tableRowLabel">Naziv</span>
-                  <TextfieldWrapper name="naziv" />
+                  <span className="tableRowLabel">Naslov</span>
+                  <TextfieldWrapper name="title" />
                 </div>
                 <div className="tableRow">
                   <span className="tableRowLabel">Opis</span>
-                  <TextfieldWrapper name="opis" />
+                  <TextfieldWrapper name="description" />
                 </div>
                 <div className="tableRow">
                   <span className="tableRowLabel">Datum trajanja OD</span>
-                  <TextfieldWrapper name="datumOd" />
+                  <TextfieldWrapper name="from" />
                 </div>
                 <div className="tableRow">
                   <span className="tableRowLabel">Datum trajanja DO</span>
-                  <TextfieldWrapper name="datumDo" />
+                  <TextfieldWrapper name="to" />
                 </div>
 
                 <ButtonWrapper

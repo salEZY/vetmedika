@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import AddButton from "../../components/FormsUI/Button/AddButton";
 import styled from "styled-components";
 import AdminAction from "../../components/Action/AdminActionCard";
 import AddAction from "../../components/Action/AddAction";
 import EditAction from "../../components/Action/EditAction";
 import DeleteAction from "../../components/Action/DeleteAction";
+import { axiosAuth as axios } from "../../util/axios-instance";
 
 const MainDiv = styled.div`
   text-align: left;
@@ -12,44 +13,61 @@ const MainDiv = styled.div`
 `;
 
 const AdminActions = () => {
-  const [actions, setActions] = useState([
-    {
-      naziv: "Akcija 1",
-      opis:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at quam ipsum. In cursus volutpat neque eget sollicitudin. Aliquam sed vehicula nibh, ut dapibus velit. Mauris laoreet a sapien vitae elementum. Phasellus ultricies dolor est, sit amet tincidunt nulla pulvinar et. Morbi et sem sed lacus feugiat rutrum aliquam non nisl. Nunc tempor sed mi a gravida. ",
-      datumOd: "01.10.2022.",
-      datumDo: "11.10.2022.",
-    },
-  ]);
+  // const [load, setLoad] = useState(false);
+  const [action, setAction] = useState(null);
   const [addOpen, setAddOpen] = useState(false);
   const [editOpen, setEditOpen] = useState(false);
   const [deleteOpen, setDeleteOpen] = useState(false);
+  const [refreshState, setRefreshState] = useState(false);
+
+  const getAction = async () => {
+    try {
+      // setLoad(true);
+      const { data } = await axios.get("/api/action");
+      setAction(data);
+      // setLoad(false);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    if (!refreshState) getAction();
+  }, [refreshState]);
 
   return (
     <MainDiv>
-      {addOpen && <AddAction modalOpen={addOpen} setModal={setAddOpen} />}
-      {editOpen && actions[0] && (
-        <EditAction
-          data={actions[0]}
-          modalOpen={editOpen}
-          setModal={setEditOpen}
+      {addOpen && (
+        <AddAction
+          modalOpen={addOpen}
+          setModal={setAddOpen}
+          setRefresh={setRefreshState}
         />
       )}
-      {deleteOpen && actions[0] && (
+      {editOpen && action && (
+        <EditAction
+          data={action}
+          modalOpen={editOpen}
+          setModal={setEditOpen}
+          setRefresh={setRefreshState}
+        />
+      )}
+      {deleteOpen && action && (
         <DeleteAction
-          data={actions[0]}
+          data={action}
           modalOpen={deleteOpen}
           setModal={setDeleteOpen}
+          setRefresh={setRefreshState}
         />
       )}
       <AddButton
-        disabled={actions.length > 0}
+        disabled={!!action}
         label="Nova akcija"
         onClick={() => setAddOpen(true)}
       />
-      {actions.length > 0 && (
+      {action && (
         <AdminAction
-          action={actions[0]}
+          action={action}
           editAction={setEditOpen}
           deleteAction={setDeleteOpen}
         />

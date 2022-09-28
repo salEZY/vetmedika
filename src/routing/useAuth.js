@@ -2,6 +2,7 @@ import React from "react";
 import { createContext, useContext, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import { useLocalStorage } from "./useLocalStorage";
+import { axiosAuth as axios } from "../util/axios-instance";
 
 const AuthContext = createContext();
 
@@ -10,8 +11,15 @@ export const AuthProvider = ({ children }) => {
   const navigate = useNavigate();
 
   const login = async (data) => {
-    setUser(data);
-    navigate("/admin-panel/akcije", { replace: true });
+    // setUser(data);
+    try {
+      const response = await axios.post("/api/user/login", data);
+      setUser(response.data.token);
+      // localStorage.setItem("user", response.data.token);
+      navigate("/admin-panel/akcije", { replace: true });
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   const logout = () => {
