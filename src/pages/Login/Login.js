@@ -15,12 +15,7 @@ const Root = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(
-    180deg,
-    #8fb0d5 -27.76%,
-    rgba(0, 17, 37, 0.05) 117.4%
-  );
-  height: 100vh;
+  height: 80vh;
   width: 100%;
 `;
 
@@ -29,15 +24,11 @@ const CenterContainer = styled.div`
   justifycontent: center;
   alignitems: center;
   height: max-content;
-  padding: 20px;
+  border-radius: 10px 0px 0px 10px;
+  border: 3px solid #50c878;
 `;
 
 const LeftSide = styled.div`
-  background: linear-gradient(
-    180deg,
-    rgba(196, 196, 196, 0.61) 0%,
-    rgba(196, 196, 196, 0) 100%
-  );
   border-radius: 10px 0px 0px 10px;
   background-color: white;
   flex: 1;
@@ -131,10 +122,11 @@ const Login = () => {
                       variant="contained"
                       // className={classes.buttonSub}
                       sx={{
-                        background:
-                          "linear-gradient(180deg, #114077 0%, #114077 0.76%)",
-                        boxShadow: "0px 4px 10px #2A2F43",
-                        borderRadius: "15px",
+                        background: "#50c878",
+                        borderRadius: "5px",
+                        ":hover": {
+                          background: "#50c896",
+                        },
                       }}
                     >
                       ULOGUJTE SE
