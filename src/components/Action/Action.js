@@ -14,7 +14,7 @@ const Action = () => {
   const classes = useStyles();
 
   return (
-    <Container className={classes.container}>
+    <Container className={classes.container} id="action">
       <h1>ACTION</h1>
     </Container>
   );
