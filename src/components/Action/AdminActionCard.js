@@ -28,7 +28,6 @@ const Description = styled.p`
 `;
 
 const AdminActionCard = ({ action, editAction, deleteAction }) => {
-  console.log(action);
   return (
     <ActionDiv>
       <div>
@@ -37,6 +36,7 @@ const AdminActionCard = ({ action, editAction, deleteAction }) => {
         <p>
           Traje od {action.from} do {action.to}
         </p>
+        <p>Aktivna: {action.active ? "Da" : "Ne"}</p>
       </div>
       <div>
         <Button

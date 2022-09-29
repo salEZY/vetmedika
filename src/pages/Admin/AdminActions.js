@@ -30,7 +30,6 @@ const AdminActions = () => {
     try {
       // setLoad(true);
       const { data } = await axios.get("/api/action");
-      console.log(data);
       setActions(data);
       // setLoad(false);
     } catch (error) {

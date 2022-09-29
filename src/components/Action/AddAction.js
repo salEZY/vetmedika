@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Button,
-  Checkbox,
-  CircularProgress,
-  FormControlLabel,
-  Modal,
-} from "@mui/material";
+import { Button, CircularProgress, Modal } from "@mui/material";
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
 import TextfieldWrapper from "../FormsUI/TextfieldWrapper";
@@ -58,7 +52,6 @@ export default function AddAction({
             description: "",
             from: "",
             to: "",
-            active: false,
           }}
           validationSchema={FORM_VALIDATION}
           onSubmit={(values) => addAction(values)}
@@ -76,13 +69,13 @@ export default function AddAction({
                 </div>
                 <div className="tableRow">
                   <span className="tableRowLabel">Datum trajanja OD</span>
-                  <TextfieldWrapper name="from" />
+                  <TextfieldWrapper name="from" placeholder="DD.MM.GGGG." />
                 </div>
                 <div className="tableRow">
                   <span className="tableRowLabel">Datum trajanja DO</span>
-                  <TextfieldWrapper name="to" />
+                  <TextfieldWrapper name="to" placeholder="DD.MM.GGGG." />
                 </div>
-                <div className="checkboxRow">
+                {/* <div className="checkboxRow">
                   <span className="tableRowLabel">Aktivna</span>
                   <Checkbox
                     checked={values.active}
@@ -91,7 +84,7 @@ export default function AddAction({
                     }
                     inputProps={{ "aria-label": "controlled" }}
                   />
-                </div>
+                </div> */}
 
                 <ButtonWrapper
                   type="submit"
