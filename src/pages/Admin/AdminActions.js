@@ -12,27 +12,44 @@ const MainDiv = styled.div`
   padding: 15px;
 `;
 
+const ActionsDiv = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`;
+
 const AdminActions = () => {
   // const [load, setLoad] = useState(false);
-  const [action, setAction] = useState(null);
+  const [actions, setActions] = useState([]);
   const [addOpen, setAddOpen] = useState(false);
   const [editOpen, setEditOpen] = useState(false);
   const [deleteOpen, setDeleteOpen] = useState(false);
   const [refreshState, setRefreshState] = useState(false);
+  const [actionData, setActionData] = useState(null);
 
-  const getAction = async () => {
+  const getActions = async () => {
     try {
       // setLoad(true);
       const { data } = await axios.get("/api/action");
-      setAction(data);
+      console.log(data);
+      setActions(data);
       // setLoad(false);
     } catch (error) {
       console.log(error);
     }
   };
 
+  const editActionHandler = (data) => {
+    setActionData(data);
+    setEditOpen(true);
+  };
+
+  const deleteActionHandler = (data) => {
+    setActionData(data);
+    setDeleteOpen(true);
+  };
+
   useEffect(() => {
-    if (!refreshState) getAction();
+    if (!refreshState) getActions();
   }, [refreshState]);
 
   return (
@@ -44,34 +61,34 @@ const AdminActions = () => {
           setRefresh={setRefreshState}
         />
       )}
-      {editOpen && action && (
+      {editOpen && actionData && (
         <EditAction
-          data={action}
+          data={actionData}
           modalOpen={editOpen}
           setModal={setEditOpen}
           setRefresh={setRefreshState}
         />
       )}
-      {deleteOpen && action && (
+      {deleteOpen && actionData && (
         <DeleteAction
-          data={action}
+          data={actionData}
           modalOpen={deleteOpen}
           setModal={setDeleteOpen}
           setRefresh={setRefreshState}
         />
       )}
-      <AddButton
-        disabled={!!action}
-        label="Nova akcija"
-        onClick={() => setAddOpen(true)}
-      />
-      {action && (
-        <AdminAction
-          action={action}
-          editAction={setEditOpen}
-          deleteAction={setDeleteOpen}
-        />
-      )}
+      <AddButton label="Nova akcija" onClick={() => setAddOpen(true)} />
+
+      <ActionsDiv>
+        {actions.map((action) => (
+          <AdminAction
+            key={action._id}
+            action={action}
+            editAction={editActionHandler}
+            deleteAction={deleteActionHandler}
+          />
+        ))}
+      </ActionsDiv>
     </MainDiv>
   );
 };

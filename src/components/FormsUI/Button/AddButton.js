@@ -6,12 +6,15 @@ const AddButton = ({ label, onClick, disabled }) => {
   return (
     <Button
       sx={{
-        backgroundColor: "#F6AE2D",
+        backgroundColor: "#50c878",
         "&:hover": {
-          backgroundColor: "#F6AE2D",
+          border: "2px solid #50c878",
+          backgroundColor: "white",
+          color: "black",
         },
         borderRadius: "20px",
         margin: "10px 0",
+        border: "2px solid #50c878",
       }}
       variant="contained"
       onClick={onClick}
