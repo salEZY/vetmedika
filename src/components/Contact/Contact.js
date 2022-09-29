@@ -13,7 +13,7 @@ const useStyles = makeStyles({
 const Contact = () => {
   const classes = useStyles();
   return (
-    <Container className={classes.container}>
+    <Container className={classes.container} id="contact">
       <h1>CONTACT</h1>
     </Container>
   );

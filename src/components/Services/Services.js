@@ -13,7 +13,7 @@ const useStyles = makeStyles({
 const Services = () => {
   const classes = useStyles();
   return (
-    <Container className={classes.container}>
+    <Container className={classes.container} id="services">
       <h1>SERVICES</h1>
     </Container>
   );
