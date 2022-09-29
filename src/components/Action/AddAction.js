@@ -47,11 +47,16 @@ export default function AddAction({
       <div style={modalStyle} className="paper">
         <h2 className="title">Nova akcija</h2>
         <Formik
-          initialValues={{ title: "", description: "", from: "", to: "" }}
+          initialValues={{
+            title: "",
+            description: "",
+            from: "",
+            to: "",
+          }}
           validationSchema={FORM_VALIDATION}
           onSubmit={(values) => addAction(values)}
         >
-          {({ isSubmitting, values }) => (
+          {({ isSubmitting, values, setFieldValue }) => (
             <Form>
               <div className="formDiv">
                 <div className="tableRow">
@@ -64,12 +69,22 @@ export default function AddAction({
                 </div>
                 <div className="tableRow">
                   <span className="tableRowLabel">Datum trajanja OD</span>
-                  <TextfieldWrapper name="from" />
+                  <TextfieldWrapper name="from" placeholder="DD.MM.GGGG." />
                 </div>
                 <div className="tableRow">
                   <span className="tableRowLabel">Datum trajanja DO</span>
-                  <TextfieldWrapper name="to" />
+                  <TextfieldWrapper name="to" placeholder="DD.MM.GGGG." />
                 </div>
+                {/* <div className="checkboxRow">
+                  <span className="tableRowLabel">Aktivna</span>
+                  <Checkbox
+                    checked={values.active}
+                    onChange={(event) =>
+                      setFieldValue("active", event.target.checked)
+                    }
+                    inputProps={{ "aria-label": "controlled" }}
+                  />
+                </div> */}
 
                 <ButtonWrapper
                   type="submit"

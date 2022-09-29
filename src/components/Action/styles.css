@@ -19,6 +19,11 @@
     display: flex;
     flex-direction: column;
   }
+  .checkboxRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
   .formDiv {
     padding: 40px;
   }
