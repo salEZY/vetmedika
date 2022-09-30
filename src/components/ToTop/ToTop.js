@@ -20,9 +20,8 @@ const ToTop = () => {
     let footer = document.querySelector("#footer");
     let contact = document.querySelector("#contact");
 
-    if (window.scrollY > 750) {
+    if (window.scrollY > 400) {
       if (footer) {
-        console.log("usao");
         let btnBottom;
         if (
           window.scrollY >

@@ -4,7 +4,7 @@ import { makeStyles } from "@mui/styles";
 const useStyles = makeStyles({
   footer: {
     height: "10vh",
-    background: "green",
+    background: "black",
   },
 });
 
