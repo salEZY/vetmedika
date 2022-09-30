@@ -4,7 +4,7 @@ import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles({
   container: {
-    minHeight: "100vh",
+    minHeight: "90vh",
     width: "80%",
     background: "green",
   },

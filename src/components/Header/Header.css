@@ -1,5 +1,5 @@
 header {
-  /* height: 15vh; */
+  height: 15vh;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -79,10 +79,10 @@ li a:hover:not(.active) {
   header {
     flex-direction: column;
   }
-  .nav p{
+  .nav p {
     font-size: 18px;
   }
-  .nav{
+  .nav {
     height: 60px;
     justify-content: unset;
   }
@@ -95,15 +95,15 @@ li a:hover:not(.active) {
   header {
     flex-direction: column;
   }
-  .nav p{
+  .nav p {
     font-size: 16px;
     margin-left: 20px;
   }
-  .nav{
+  .nav {
     height: 55px;
     justify-content: unset;
   }
-  .logoImg{
+  .logoImg {
     width: 90%;
   }
 }

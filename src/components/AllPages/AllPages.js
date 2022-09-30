@@ -3,6 +3,8 @@ import Action from "../Action/Action";
 import Contact from "../Contact/Contact";
 import Home from "../Home/Home";
 import Services from "../Services/Services";
+import Footer from "../Footer/Footer";
+import ToTop from "../ToTop/ToTop";
 import { axiosAuth as axios } from "../../util/axios-instance";
 
 const AllPages = () => {
@@ -25,6 +27,8 @@ const AllPages = () => {
       <Action />
       <Services />
       <Contact />
+      <Footer />
+      <ToTop />
     </>
   );
 };
