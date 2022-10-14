@@ -1,12 +1,12 @@
 import React from "react";
 import Container from "@mui/material/Container";
+import Title from "../FormsUI/Title/Title";
 import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles({
   container: {
     minHeight: "85vh",
     width: "80%",
-    background: "green",
   },
 });
 
@@ -15,7 +15,7 @@ const Home = () => {
 
   return (
     <Container className={classes.container}>
-      <h1>HOME</h1>
+      <Title title="Dobrodosli" />
     </Container>
   );
 };
