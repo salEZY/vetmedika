@@ -1,0 +1,23 @@
+.title-div {
+  width: 100%;
+  padding-top: 5rem;
+}
+
+.title-div span {
+  display: inline;
+  font-size: 3rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-style: oblique;
+  position: relative !important;
+}
+.title-div span::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 7.5px;
+  margin: 0 auto;
+  margin-top: 5px;
+  background: #50c878;
+  border-radius: 5px;
+}

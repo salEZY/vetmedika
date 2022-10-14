@@ -1,5 +1,6 @@
 import React from "react";
 import Container from "@mui/material/Container";
+import Title from "../FormsUI/Title/Title";
 import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles({
@@ -14,7 +15,7 @@ const Services = () => {
   const classes = useStyles();
   return (
     <Container className={classes.container} id="services">
-      <h1>SERVICES</h1>
+      <Title title="Services" />
     </Container>
   );
 };
