@@ -1,8 +1,6 @@
 import React from "react";
 import { makeStyles } from "@mui/styles";
 
-import "./ContactInfo.css";
-
 const useStyles = makeStyles({
   container: {
     minHeight: "100%",
