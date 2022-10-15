@@ -44,7 +44,7 @@ const Contact = () => {
 
   return (
     <Container className={classes.container} id="contact" ref={ref}>
-      <Title title="Contact" />
+      <Title title="Kontakt" />
       <div className={classes.contactDiv}>
         <div className={classes.map}>
           <iframe
