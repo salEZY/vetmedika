@@ -36,28 +36,30 @@ const ContactInfo = () => {
   const faIcon = {
     color: "#50c878",
     marginRight: "10px",
+    fontSize: "1.5rem",
+    fontWeight: 500,
   };
 
   return (
     <div className={classes.container}>
       <div className={classes.info}>
         <p style={infoP}>
-          <i className="fa-solid fa-location-pin" style={faIcon}></i>Vojvode
+          <i className="fa-thin fa-location-pin" style={faIcon}></i>Vojvode
           Šupljikca 43, Vračar
         </p>
         <p style={infoP}>
-          <i className="fa-solid fa-phone-rotary faIcon" style={faIcon}></i>{" "}
+          <i className="fa-thin fa-phone-rotary faIcon" style={faIcon}></i>{" "}
           011/3822-802, 011/3822-837
         </p>
         <p style={infoP}>
-          <i className="fa-solid fa-envelope" style={faIcon}></i>{" "}
+          <i className="fa-thin fa-envelope" style={faIcon}></i>{" "}
           info@vetmedika.rs
         </p>
         <p style={infoP}>
-          <i className="fa-solid fa-browser" style={faIcon}></i>www.vetmedika.rs
+          <i className="fa-thin fa-browser" style={faIcon}></i>www.vetmedika.rs
         </p>
         <p style={infoP}>
-          <i className="fa-solid fa-mobile-screen" style={faIcon}></i>{" "}
+          <i className="fa-thin fa-mobile-screen" style={faIcon}></i>{" "}
           063/1178-443, 064/9931-076
         </p>
       </div>

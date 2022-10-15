@@ -15,7 +15,7 @@ const Services = () => {
   const classes = useStyles();
   return (
     <Container className={classes.container} id="services">
-      <Title title="Services" />
+      <Title title="Usluge" />
     </Container>
   );
 };
