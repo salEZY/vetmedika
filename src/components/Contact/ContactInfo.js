@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@mui/styles";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   container: {
     minHeight: "100%",
     width: "50%",
@@ -10,12 +10,20 @@ const useStyles = makeStyles({
     justifyContent: "center",
     alignItems: "center",
     alignContent: "center",
+    [theme.breakpoints.down(700)]: {
+      width: "100%",
+    },
   },
   info: {
     margin: "2rem auto",
   },
-  workingHours: { marginTop: "5rem" },
-});
+  workingHours: {
+    marginTop: "5rem",
+    [theme.breakpoints.down(700)]: {
+      margin: "2rem auto",
+    },
+  },
+}));
 
 const ContactInfo = () => {
   const classes = useStyles();

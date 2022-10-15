@@ -4,25 +4,34 @@ import Title from "../FormsUI/Title/Title";
 import ContactInfo from "./ContactInfo";
 import { makeStyles } from "@mui/styles";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   container: {
     minHeight: "90vh",
     width: "80%",
+    [theme.breakpoints.down(700)]: {
+      width: "100%",
+    },
   },
   contactDiv: {
     width: "100%",
     height: "100%",
     display: "flex",
     flexDirection: "row",
+    [theme.breakpoints.down(700)]: {
+      flexDirection: "column",
+    },
   },
   map: {
     width: "50%",
     height: "100% !important",
+    [theme.breakpoints.down(700)]: {
+      width: "100%",
+    },
   },
   iFrame: {
     border: "0",
   },
-});
+}));
 
 const Contact = () => {
   const classes = useStyles();
