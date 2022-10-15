@@ -1,5 +1,10 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import {
+  ThemeProvider,
+  createTheme,
+  StyledEngineProvider,
+} from "@mui/material/styles";
 
 import "./App.css";
 // import Header from "./components/Header/Header";
@@ -13,25 +18,31 @@ import AdminActions from "./pages/Admin/AdminActions";
 import { HomeLayout } from "./routing/HomeLayout";
 import { ProtectedLayout } from "./routing/ProtectedLayout";
 
+const theme = createTheme();
+
 function App() {
   return (
-    <div className="App">
-      <Routes>
-        <Route element={<HomeLayout />}>
-          <Route path="/" element={<AllPages />} />
-          <Route path="/prijava" element={<Login />} />
-        </Route>
+    <ThemeProvider theme={theme}>
+      <StyledEngineProvider injectFirst>
+        <div className="App">
+          <Routes>
+            <Route element={<HomeLayout />}>
+              <Route path="/" element={<AllPages />} />
+              <Route path="/prijava" element={<Login />} />
+            </Route>
 
-        <Route path="/admin-panel" element={<ProtectedLayout />}>
-          <Route path="akcije" element={<AdminActions />} />
-        </Route>
-      </Routes>
-      {/* <Header /> */}
-      {/* <Home />
+            <Route path="/admin-panel" element={<ProtectedLayout />}>
+              <Route path="akcije" element={<AdminActions />} />
+            </Route>
+          </Routes>
+          {/* <Header /> */}
+          {/* <Home />
       <Action />
       <Services />
       <Contact /> */}
-    </div>
+        </div>
+      </StyledEngineProvider>
+    </ThemeProvider>
   );
 }
 
