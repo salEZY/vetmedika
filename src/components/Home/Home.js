@@ -14,7 +14,7 @@ const useStyles = makeStyles({
   carouselDiv: {
     width: "70%",
     margin: "auto",
-    padding: 20,
+    // padding: 20,
   },
 });
 
