@@ -14,7 +14,7 @@ const ActionDiv = styled.div`
   justify-content: space-between;
 `;
 
-const Title = styled.h1`
+const Title = styled.h3`
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;

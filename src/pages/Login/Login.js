@@ -21,8 +21,8 @@ const Root = styled.div`
 
 const CenterContainer = styled.div`
   display: flex;
-  justifycontent: center;
-  alignitems: center;
+  justify-content: center;
+  align-items: center;
   height: max-content;
   border-radius: 10px 0px 0px 10px;
   border: 3px solid #50c878;
