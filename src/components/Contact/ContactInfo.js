@@ -1,4 +1,5 @@
 import React from "react";
+import Title from "../FormsUI/Title/Title";
 import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles((theme) => ({
@@ -42,6 +43,7 @@ const ContactInfo = () => {
 
   return (
     <div className={classes.container}>
+      <Title title="Kontakt" />
       <div className={classes.info}>
         <p style={infoP}>
           <i className="fa-thin fa-location-pin" style={faIcon}></i>Vojvode
