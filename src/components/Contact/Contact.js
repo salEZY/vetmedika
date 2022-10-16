@@ -1,6 +1,5 @@
 import React, { useRef, useState, useLayoutEffect } from "react";
 import Container from "@mui/material/Container";
-import Title from "../FormsUI/Title/Title";
 import ContactInfo from "./ContactInfo";
 import { makeStyles } from "@mui/styles";
 
@@ -44,7 +43,6 @@ const Contact = () => {
 
   return (
     <Container className={classes.container} id="contact" ref={ref}>
-      <Title title="Kontakt" />
       <div className={classes.contactDiv}>
         <div className={classes.map}>
           <iframe
