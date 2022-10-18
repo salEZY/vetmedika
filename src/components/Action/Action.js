@@ -39,7 +39,7 @@ const Action = () => {
       {action.active && (
         <div className={classes.container} id="action">
           <div className={classes.content}>
-            <Title title="Akcija" />
+            <Title title="Akcija" cssStyle={{ margin: "1rem auto" }} />
             <ActionDisplay action={action} />
           </div>
         </div>

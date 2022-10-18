@@ -23,7 +23,7 @@ const Home = () => {
 
   return (
     <Container className={classes.container}>
-      <Title title="Dobrodošli" />
+      <Title title="Dobrodošli" cssStyle={{ margin: "2rem auto" }} />
       <div className={classes.carouselDiv}>
         <CarouselComponent />
       </div>

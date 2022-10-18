@@ -43,8 +43,7 @@ const ContactInfo = () => {
 
   return (
     <div className={classes.container}>
-      <Title title="Kontakt" />
-
+      <Title title="Kontakt" cssStyle={{ margin: "1rem auto" }} />
       <div className={classes.info}>
         <p style={infoP}>
           <i className="fa-thin fa-location-pin" style={faIcon}></i>Vojvode
