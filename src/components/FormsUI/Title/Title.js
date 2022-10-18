@@ -24,10 +24,10 @@ const useStyles = makeStyles({
   },
 }); */
 
-const Title = ({ title }) => {
+const Title = ({ title, cssStyle }) => {
   //const classes = useStyles();
   return (
-    <div className="title-div">
+    <div className="title-div" style={cssStyle}>
       <span>{title}</span>
     </div>
   );
