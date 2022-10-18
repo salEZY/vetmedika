@@ -9,7 +9,7 @@ import { Button } from "@mui/material";
 const useStyles = makeStyles({
   container: {
     minHeight: "85vh",
-    width: "80%",
+    width: "100%",
   },
   carouselDiv: {
     width: "70%",

@@ -1,12 +1,12 @@
 import React, { useRef, useState, useLayoutEffect } from "react";
-import Container from "@mui/material/Container";
 import ContactInfo from "./ContactInfo";
 import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles((theme) => ({
   container: {
     minHeight: "90vh",
-    width: "80%",
+    width: "100%",
+    //padding: "0 10px",
     [theme.breakpoints.down(700)]: {
       width: "100%",
     },
@@ -42,7 +42,7 @@ const Contact = () => {
   }, []);
 
   return (
-    <Container className={classes.container} id="contact" ref={ref}>
+    <div className={classes.container} id="contact" ref={ref}>
       <div className={classes.contactDiv}>
         <div className={classes.map}>
           <iframe
@@ -58,7 +58,7 @@ const Contact = () => {
         </div>
         <ContactInfo />
       </div>
-    </Container>
+    </div>
   );
 };
 

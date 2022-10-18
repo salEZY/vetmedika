@@ -44,6 +44,9 @@ const ContactInfo = () => {
   return (
     <div className={classes.container}>
       <Title title="Kontakt" />
+      <p>
+        Ukoliko imate bilo koje pitanje, ne ustručavajte se da nas pozovete.
+      </p>
       <div className={classes.info}>
         <p style={infoP}>
           <i className="fa-thin fa-location-pin" style={faIcon}></i>Vojvode
