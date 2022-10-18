@@ -35,11 +35,6 @@ function App() {
               <Route path="akcije" element={<AdminActions />} />
             </Route>
           </Routes>
-          {/* <Header /> */}
-          {/* <Home />
-      <Action />
-      <Services />
-      <Contact /> */}
         </div>
       </StyledEngineProvider>
     </ThemeProvider>
