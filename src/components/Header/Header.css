@@ -3,7 +3,7 @@ header {
   width: 100%;
   display: flex;
   flex-direction: row;
-  background-color: #50c878;
+  background: linear-gradient(to right, #50c878, #50c85a);
   color: white;
   margin-bottom: 1rem;
 }
@@ -22,6 +22,16 @@ header {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+  padding-right: 2rem;
+}
+
+.burger {
+  width: 70%;
+  display: none;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 2.5rem;
   padding-right: 2rem;
 }
 
@@ -77,15 +87,16 @@ li a:hover:not(.active) {
 }
 
 @media only screen and (max-width: 700px) {
-  header {
-    flex-direction: column;
-  }
   .nav p {
     font-size: 18px;
   }
   .nav {
     height: 60px;
     justify-content: unset;
+    display: none;
+  }
+  .burger {
+    display: flex;
   }
   /* .logoImg{
     width: 80%;
@@ -93,9 +104,6 @@ li a:hover:not(.active) {
 }
 
 @media only screen and (max-width: 500px) {
-  header {
-    flex-direction: column;
-  }
   .nav p {
     font-size: 16px;
     margin-left: 20px;
@@ -104,7 +112,7 @@ li a:hover:not(.active) {
     height: 55px;
     justify-content: unset;
   }
-  .logoImg {
+  /* .logoImg {
     width: 90%;
-  }
+  } */
 }
