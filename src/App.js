@@ -7,11 +7,6 @@ import {
 } from "@mui/material/styles";
 
 import "./App.css";
-// import Header from "./components/Header/Header";
-// import Home from "./components/Home/Home";
-// import Action from "./components/Action/Action";
-// import Services from "./components/Services/Services";
-// import Contact from "./components/Contact/Contact";
 import AllPages from "./components/AllPages/AllPages";
 import Login from "./pages/Login/Login";
 import AdminActions from "./pages/Admin/AdminActions";
