@@ -5,6 +5,8 @@ import "./Header.css";
 
 const Header = () => {
   const ref = useRef(null);
+  const [burger, setBurger] = useState(false);
+  const [modal, setModal] = useState(false);
   const [windowSize, setWindowSize] = useState(window.innerWidth);
 
   useLayoutEffect(() => {
@@ -17,6 +19,14 @@ const Header = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const burgerHandler = () => {
+    setBurger(!burger);
+    setModal(!modal);
+    !modal
+      ? document.body.setAttribute("class", "remove-scroll")
+      : document.body.setAttribute("class", "");
+  };
+  console.log(burger);
   const reloadPage = () => {
     window.location.reload();
   };
@@ -49,8 +59,21 @@ const Header = () => {
         </p>
       </div>
       <div className="burger">
-        <i className="fa-sharp fa-solid fa-bars-staggered"></i>
+        {burger ? (
+          <i
+            className="fa-sharp fa-solid fa-xmark-large"
+            id="burger-btn"
+            onClick={burgerHandler}
+          ></i>
+        ) : (
+          <i
+            className="fa-sharp fa-solid fa-bars-staggered"
+            id="burger-btn"
+            onClick={burgerHandler}
+          ></i>
+        )}
       </div>
+      {modal && <div className="modal">MODAL</div>}
     </header>
   );
 };
