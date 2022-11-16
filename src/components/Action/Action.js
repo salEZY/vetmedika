@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React, { useContext } from "react";
+import { AppContext } from "../../util/app-context";
 import { makeStyles } from "@mui/styles";
 import Title from "../FormsUI/Title/Title";
 import ActionDisplay from "./ActionDisplay";
@@ -23,24 +23,16 @@ const useStyles = makeStyles({
 });
 
 const Action = () => {
-  const [action, setAction] = useState({});
   const classes = useStyles();
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const res = await axios("http://localhost:6060/api/action/get/active");
-      setAction(res.data);
-    };
-    fetchData();
-  }, []);
+  const appContext = useContext(AppContext);
 
   return (
     <>
-      {action.active && (
+      {appContext.action.active && (
         <div className={classes.container} id="action">
           <div className={classes.content}>
             <Title title="Akcija" cssStyle={{ margin: "1rem auto" }} />
-            <ActionDisplay action={action} />
+            <ActionDisplay action={appContext.action} />
           </div>
         </div>
       )}

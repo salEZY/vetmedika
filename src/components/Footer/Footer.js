@@ -3,6 +3,7 @@ import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles({
   footer: {
+    width: "100%",
     minHeight: "10vh",
     background: "black",
   },

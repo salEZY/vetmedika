@@ -22,11 +22,12 @@ const Header = () => {
   const burgerHandler = () => {
     setBurger(!burger);
     setModal(!modal);
+
     !modal
       ? document.body.setAttribute("class", "remove-scroll")
-      : document.body.setAttribute("class", "");
+      : document.body.removeAttribute("class");
   };
-  console.log(burger);
+
   const reloadPage = () => {
     window.location.reload();
   };
