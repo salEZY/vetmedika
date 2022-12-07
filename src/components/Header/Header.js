@@ -1,5 +1,6 @@
 import React, { useRef, useLayoutEffect, useState } from "react";
-import { Link } from "react-scroll";
+import Navigation from "../FormsUI/Navigation/Navigation";
+import Modal from "./Modal";
 
 import "./Header.css";
 
@@ -42,23 +43,10 @@ const Header = () => {
       <div className="logo" onClick={reloadPage} style={{ cursor: "pointer" }}>
         <img src={imgSrc} alt="Vetmedika logo" className="logoImg" />
       </div>
-      <div className="nav">
-        <p>
-          <Link to="action" spy={true} smooth={true} duration={300}>
-            Akcije
-          </Link>
-        </p>
-        <p>
-          <Link to="services" spy={true} smooth={true} duration={300}>
-            Usluge
-          </Link>
-        </p>
-        <p>
-          <Link to="contact" spy={true} smooth={true} duration={300}>
-            Kontakt
-          </Link>
-        </p>
+      <div className="nav-holder">
+        <Navigation />
       </div>
+
       <div className="burger">
         {burger ? (
           <i
@@ -74,7 +62,7 @@ const Header = () => {
           ></i>
         )}
       </div>
-      {modal && <div className="modal">MODAL</div>}
+      {modal && <Modal />}
     </header>
   );
 };

@@ -16,13 +16,11 @@ header {
   padding-left: 2rem;
 }
 
-.nav {
+.nav-holder {
   width: 70%;
   display: flex;
-  flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 2rem;
 }
 
 .burger {
@@ -37,7 +35,7 @@ header {
 
 #burger-btn {
   cursor: pointer;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .modal {
@@ -46,88 +44,18 @@ header {
   width: 100%;
   height: 85vh;
   z-index: 10;
-  color: black;
-  background: red;
-}
-
-.nav p {
-  margin-left: 40px;
-  font-size: 22px;
-  padding: 10px;
-  border: 5px solid;
-  border-radius: 5px;
-  cursor: pointer;
-  border-image: repeating-linear-gradient(
-      135deg,
-      white 0 10px,
-      white 0 20px,
-      white 0 30px
-    )
-    8;
-  mask: conic-gradient(from 180deg at top 8px right 8px, #0000 90deg, #000 0)
-      var(--_i, 200%) 0 /200% var(--_i, 8px) border-box no-repeat,
-    conic-gradient(at bottom 8px left 8px, #0000 90deg, #000 0) 0
-      var(--_i, 200%) / var(--_i, 8px) 200% border-box no-repeat,
-    linear-gradient(#000 0 0) padding-box no-repeat;
-  transition: 0.25s, mask-position 0.25s 0.25s;
-}
-
-.nav p:hover {
-  --_i: 100%;
-  transition: 0.25s, mask-size 0.25s 0.25s;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #50c878;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
   color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  background: #50c85a;
 }
-
-li a:hover:not(.active) {
-  background-color: #50c878;
+.modal-holder {
+  margin-top: 15vh;
 }
 
 @media only screen and (max-width: 700px) {
-  .nav p {
-    font-size: 18px;
-  }
-  .nav {
-    height: 60px;
-    justify-content: unset;
-    display: none;
-  }
   .burger {
     display: flex;
   }
-  /* .logoImg{
-    width: 80%;
-  } */
-}
-
-@media only screen and (max-width: 500px) {
-  .nav p {
-    font-size: 16px;
-    margin-left: 20px;
+  .nav-holder {
+    display: none;
   }
-  .nav {
-    height: 55px;
-    justify-content: unset;
-  }
-  /* .logoImg {
-    width: 90%;
-  } */
 }
