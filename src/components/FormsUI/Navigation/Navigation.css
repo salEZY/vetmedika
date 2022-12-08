@@ -3,7 +3,6 @@
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 2rem;
 }
 
 .nav p {
@@ -61,19 +60,11 @@ li a:hover:not(.active) {
   .nav p {
     font-size: 18px;
   }
-  .nav {
-    height: 60px;
-    justify-content: unset;
-  }
 }
 
 @media only screen and (max-width: 500px) {
   .nav p {
     font-size: 16px;
     margin-left: 20px;
-  }
-  .nav {
-    height: 55px;
-    justify-content: unset;
   }
 }

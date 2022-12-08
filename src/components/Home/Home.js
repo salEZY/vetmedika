@@ -5,7 +5,7 @@ import { makeStyles } from "@mui/styles";
 import CarouselComponent from "../Carousel/Carousel";
 import { Link } from "react-scroll";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   container: {
     minHeight: "85vh",
     width: "100%",
@@ -16,6 +16,7 @@ const useStyles = makeStyles({
     // padding: 20,
   },
   contactButton: {
+    width: "50%",
     fontSize: "2rem",
     fontWeight: "bolder",
     margin: "2rem auto",
@@ -30,8 +31,13 @@ const useStyles = makeStyles({
     "&:hover": {
       padding: "20px 150px",
     },
+    [theme.breakpoints.down(700)]: {
+      width: "80%",
+      fontSize: "1.2rem",
+      padding: "10px",
+    },
   },
-});
+}));
 
 const Home = () => {
   const classes = useStyles();
@@ -53,7 +59,13 @@ const Home = () => {
         podataka.
       </div>
 
-      <Link to="contact" spy={true} smooth={true} duration={300}>
+      <Link
+        to="contact"
+        spy={true}
+        smooth={true}
+        duration={300}
+        style={{ width: "100%" }}
+      >
         <button className={classes.contactButton}>Kontaktirajte nas</button>
       </Link>
     </Container>
