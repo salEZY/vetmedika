@@ -24,6 +24,13 @@ const useStyles = makeStyles((theme) => ({
       margin: "2rem auto",
     },
   },
+  question: {
+    marginTop: "2rem",
+    [theme.breakpoints.down(700)]: {
+      marginTop: 0,
+      marginBottom: "2rem",
+    },
+  },
 }));
 
 const ContactInfo = () => {
@@ -71,7 +78,7 @@ const ContactInfo = () => {
         <p style={infoP}>Subota 10:00 - 14:00</p>
         <p style={infoP}>Nedelja 10:00 - 12:00</p>
       </div>
-      <p style={{ marginTop: "2rem" }}>
+      <p className={classes.question}>
         Ukoliko imate bilo koje pitanje, ne ustručavajte se da nas pozovete.
       </p>
     </div>
