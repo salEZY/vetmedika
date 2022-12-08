@@ -14,15 +14,26 @@ import { HomeLayout } from "./routing/HomeLayout";
 import { ProtectedLayout } from "./routing/ProtectedLayout";
 import { AppContext } from "./util/app-context";
 import { useAction } from "./util/action-hook";
+import { useHeader } from "./util/header-hook";
 
 const theme = createTheme();
 
 function App() {
   const { action } = useAction();
+  const { burger, modal, headerHandler, linkHandler } = useHeader();
+
   return (
     <ThemeProvider theme={theme}>
       <StyledEngineProvider injectFirst>
-        <AppContext.Provider value={{ action: action }}>
+        <AppContext.Provider
+          value={{
+            action: action,
+            burger: burger,
+            modal: modal,
+            headerHandler: headerHandler,
+            linkHandler: linkHandler,
+          }}
+        >
           <div className="App">
             <Routes>
               <Route element={<HomeLayout />}>

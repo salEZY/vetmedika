@@ -1,13 +1,14 @@
-import React, { useRef, useLayoutEffect, useState } from "react";
+import React, { useRef, useLayoutEffect, useState, useContext } from "react";
+import { AppContext } from "../../util/app-context";
 import Navigation from "../FormsUI/Navigation/Navigation";
 import Modal from "./Modal";
 
 import "./Header.css";
 
 const Header = () => {
+  const appCtx = useContext(AppContext);
   const ref = useRef(null);
-  const [burger, setBurger] = useState(false);
-  const [modal, setModal] = useState(false);
+
   const [windowSize, setWindowSize] = useState(window.innerWidth);
 
   useLayoutEffect(() => {
@@ -19,15 +20,6 @@ const Header = () => {
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
-  const burgerHandler = () => {
-    setBurger(!burger);
-    setModal(!modal);
-
-    !modal
-      ? document.body.setAttribute("class", "remove-scroll")
-      : document.body.removeAttribute("class");
-  };
 
   const reloadPage = () => {
     window.location.reload();
@@ -48,21 +40,21 @@ const Header = () => {
       </div>
 
       <div className="burger">
-        {burger ? (
+        {appCtx.burger ? (
           <i
             className="fa-sharp fa-solid fa-xmark-large"
             id="burger-btn"
-            onClick={burgerHandler}
+            onClick={appCtx.headerHandler}
           ></i>
         ) : (
           <i
             className="fa-sharp fa-solid fa-bars-staggered"
             id="burger-btn"
-            onClick={burgerHandler}
+            onClick={appCtx.headerHandler}
           ></i>
         )}
       </div>
-      {modal && <Modal />}
+      {appCtx.modal && <Modal />}
     </header>
   );
 };
