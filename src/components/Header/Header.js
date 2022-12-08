@@ -36,7 +36,7 @@ const Header = () => {
         <img src={imgSrc} alt="Vetmedika logo" className="logoImg" />
       </div>
       <div className="nav-holder">
-        <Navigation />
+        <Navigation customCssDiv={{ paddingRight: "2rem" }} />
       </div>
 
       <div className="burger">
