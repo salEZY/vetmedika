@@ -52,7 +52,7 @@ const Footer = () => {
         <p className={classes.infoParagraph}>Vojvode Šupljikca 43, Vračar</p>
         <p className={classes.infoParagraph}>info@vetmedika.rs</p>
         <p className={classes.infoParagraph}>
-          COPYRIGTH 2023 RACCOON CITY GAMES
+          Copyright <i class="fa-light fa-copyright"></i> 2023
         </p>
       </div>
     </footer>
