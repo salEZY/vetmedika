@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { makeStyles } from "@mui/styles";
 import ServiceModal from "./ServiceModal";
+import axios from "axios";
 
 const useStyles = makeStyles((theme) => ({
   holder: {
@@ -50,7 +51,12 @@ const Service = ({ icon, title, type }) => {
       </p>
 
       <p className={classes.link}>Saznajte više...</p>
-      <ServiceModal open={open} handleClose={handleModal} />
+      <ServiceModal
+        open={open}
+        handleClose={handleModal}
+        type={type}
+        title={title}
+      />
     </div>
   );
 };
