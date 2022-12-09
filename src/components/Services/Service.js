@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
       borderColor: "#50c878",
     },
     border: "3px solid #353935",
-    borderRadius: "10px",
+    borderRadius: "5px",
     [theme.breakpoints.down(700)]: {
       margin: "1rem auto",
       width: "80%",
