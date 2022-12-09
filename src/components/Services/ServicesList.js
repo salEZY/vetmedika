@@ -22,14 +22,20 @@ const ServicesList = () => {
 
   return (
     <div className={classes.container}>
-      <Service icon="fa-thin fa-stethoscope" />
-      <Service icon="fa-thin fa-tooth" />
-      <Service icon="fa-thin fa-eye" />
-      <Service icon="fa-thin fa-scalpel" />
-      <Service icon="fa-thin fa-x-ray" />
-      <Service icon="fa-thin fa-heart" />
-      <Service icon="fa-thin fa-hand-dots" />
-      <Service icon="fa-thin fa-brush" />
+      <Service icon="fa-thin fa-stethoscope" title="INTERNISTIČKI KABINET" />
+      <Service icon="fa-thin fa-tooth" title="STOMATOLOGIJA" />
+      <Service icon="fa-thin fa-eye" title="OFTALMOLOŠKI KABINET" />
+      <Service icon="fa-thin fa-scalpel-line-dashed" title="HIRURGIJA" />
+      <Service
+        icon="fa-thin fa-x-ray"
+        title="ULTRAZVUČNA I RENDGEN DIJAGNOSTIKA"
+      />
+      <Service icon="fa-thin fa-heart" title="KARDIOLOGIJA" />
+      <Service icon="fa-thin fa-paw" title="DERMATOLOGIJA" />
+      <Service
+        icon="fa-thin fa-toothbrush"
+        title="ULEPŠAVANJE I ODRŽAVANJE HIGIJENE KUĆNIH LJUBIMACA"
+      />
     </div>
   );
 };

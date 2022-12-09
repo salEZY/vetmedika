@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@mui/styles";
+import ServiceModal from "./ServiceModal";
 
 const useStyles = makeStyles((theme) => ({
   holder: {
-    width: "20%",
+    width: "25%",
     height: "300px",
     margin: "2rem",
     padding: "5px",
@@ -18,7 +19,11 @@ const useStyles = makeStyles((theme) => ({
       borderColor: "#50c878",
     },
     border: "3px solid #353935",
-    borderRadius: "5px",
+    borderRadius: "10px",
+    [theme.breakpoints.down(700)]: {
+      margin: "1rem auto",
+      width: "80%",
+    },
   },
   iconP: {
     fontSize: "5rem",
@@ -30,16 +35,22 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Service = ({ icon }) => {
+const Service = ({ icon, title, type }) => {
+  const [open, setOpen] = useState(false);
   const classes = useStyles();
 
+  const handleModal = () => {
+    setOpen(!open);
+  };
+
   return (
-    <div className={classes.holder}>
+    <div className={classes.holder} title={title} onClick={handleModal}>
       <p className={classes.iconP}>
         <i className={icon} />
       </p>
 
       <p className={classes.link}>Saznajte više...</p>
+      <ServiceModal open={open} handleClose={handleModal} />
     </div>
   );
 };
