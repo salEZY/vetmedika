@@ -20,3 +20,9 @@
   background: #50c878;
   border-radius: 5px;
 }
+
+@media only screen and (max-width: 700px) {
+  .title-div span {
+    font-size: 2rem;
+  }
+}
