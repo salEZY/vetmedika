@@ -20,15 +20,16 @@ const useStyles = makeStyles((theme) => ({
     border: "none",
     borderRadius: "10px",
     [theme.breakpoints.down(700)]: {
+      padding: "10px",
+      margin: "1rem auto",
       width: "95%",
-      overflow: "clip",
     },
   },
   title: {
     margin: "2rem auto",
     fontSize: "2rem",
     [theme.breakpoints.down(700)]: {
-      margin: "1rem auto",
+      margin: "10px auto",
       fontSize: "1.5rem",
     },
   },
@@ -46,7 +47,7 @@ const ServiceModal = ({ open, handleClose, type, title }) => {
   const classes = useStyles();
 
   return (
-    <Modal open={open} onClose={handleClose} style={{ border: "none" }}>
+    <Modal open={open} onClose={handleClose} style={{ overflow: "scroll" }}>
       <div className={classes.servicesHolder}>
         <h3 className={classes.title}>{title}</h3>
         {data[type].map((d) => {
