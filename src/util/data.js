@@ -33,10 +33,10 @@ const data = {
     "Onkološka hirurgija",
   ],
   xray: [
-    "Ultrazvučna dijagnostika se najčešće koristi za pregled mekih tkiva. Tako što daje dvodimenzionalnu sliku ultrazvuk koristimo za vizuelizaciju organa u stomaku (bubrega, jetre, slezine, želudca, creva, pankreasa, mokraćne bešike, materice ...) i u grudnoj duplji ( Srce ) i na taj način smo u mogućnosti da procenimo stanje, položaj i dimenzije tih organa",
-    "Ova metoda se uspešno koristi u dijagnostici graviditeta, kao i praćenju vitalnosti plodova( praćenje fetalnih srčanih akcija ). Postoje i pomoćne metode u ultrazvučnoj dijagnostici kao što je ubacivanje kontrasta u voluminozne organe ( insufliranje vazduha ili tečnosti ) te procena stanja zidova ovih organa",
-    "Druge regije kao što su oči, štitna žlezda, mlečna žlezda i testisi mogu se pregledati ovom metodom veoma uspešno. Bitno je napomenuti da pri ultrazvučnom pregledu životinja ne oseća bol, od neprijatnosti može da oseti jedino hladan gel na obrijanom stomaku i neprirodan položaj ležeći na stolu za pregled. Obično životinjama ne dajemo anesteziju prilikom pregleda, ali sedacija može biti neophodna kod previše agresivnih i uplašenih životinja",
-    "Rendgenska dijagnostika: Kao pomoćno dijagnostičko sredstvo omogućava precizniju dijagnozu, korišćenjem nativne i kontrastne tehnike. Nativnom tehnikom, rendgenska dijagnostika pruža uvid u stanje koštanog sistema, mekih tkiva, pozicije eventualnih stranih tela, dok primenom kontrastnih sredstava dobijamo jasnu sliku građe, kao i anomalija različitih organskih sistema. Najčešće korišćene metode su: kontrast digestivnog sistema, mijelografija, pijelografija, pneumokontrastna dijagnostika.",
+    "Ultrazvučna dijagnostika se najčešće koristi za pregled mekih tkiva. Tako što daje dvodimenzionalnu sliku ultrazvuk koristimo za vizuelizaciju organa u stomaku (bubrega, jetre, slezine, želudca, creva, pankreasa, mokraćne bešike, materice...) i u grudnoj duplji (Srce)",
+    "Ova metoda se uspešno koristi u dijagnostici graviditeta, kao i praćenju vitalnosti plodova( praćenje fetalnih srčanih akcija ). Pomoćne metoda je ubacivanje kontrasta u voluminozne organe (insufliranje vazduha ili tečnosti) te procena stanja zidova ovih organa",
+    "Druge regije kao što su oči, štitna žlezda, mlečna žlezda i testisi mogu se pregledati ovom metodom veoma uspešno",
+    "Rendgenska dijagnostika: Kao pomoćno dijagnostičko sredstvo omogućava precizniju dijagnozu, korišćenjem nativne i kontrastne tehnike. Najčešće korišćene metode su: kontrast digestivnog sistema, mijelografija, pijelografija, pneumokontrastna dijagnostika.",
   ],
   heart: ["Auskultacija", "EKG", "EHOKARDIOGRAFIJA"],
   derma: [

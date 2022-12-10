@@ -36,7 +36,7 @@ const ServicesList = () => {
       />
       <Service
         icon="fa-thin fa-x-ray"
-        title="Ultrazvučna i Rendgen dijagnostika"
+        title="Ultrazvuk i Rendgen"
         type="xray"
       />
       <Service icon="fa-thin fa-heart" title="Kardiologija" type="heart" />

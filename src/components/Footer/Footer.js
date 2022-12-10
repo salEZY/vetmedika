@@ -1,6 +1,7 @@
 import React from "react";
 import { makeStyles } from "@mui/styles";
 import Navigation from "../FormsUI/Navigation/Navigation";
+import EmailLink from "../FormsUI/EmailLink";
 
 const useStyles = makeStyles((theme) => ({
   footer: {
@@ -49,10 +50,13 @@ const Footer = () => {
         }}
       />
       <div className={classes.info}>
-        <p className={classes.infoParagraph}>Vojvode Šupljikca 43, Vračar</p>
-        <p className={classes.infoParagraph}>info@vetmedika.rs</p>
         <p className={classes.infoParagraph}>
           Copyright <i className="fa-light fa-copyright"></i> 2023
+        </p>
+        <p className={classes.infoParagraph}> Razvoj aplikacije:</p>
+        <p className={classes.infoParagraph}>
+          <EmailLink email="bobicaleks@yahoo.com" color="white" />{" "}
+          <EmailLink email="igor.lakic2@gmail.com" color="white" />
         </p>
       </div>
     </footer>

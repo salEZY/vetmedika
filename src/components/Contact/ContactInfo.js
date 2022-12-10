@@ -1,6 +1,7 @@
 import React from "react";
 import Title from "../FormsUI/Title/Title";
 import { makeStyles } from "@mui/styles";
+import EmailLink from "../FormsUI/EmailLink";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -39,6 +40,7 @@ const ContactInfo = () => {
   const infoP = {
     margin: "1rem auto",
     fontSize: "1.25rem",
+    color: "black !important",
   };
 
   const faIcon = {
@@ -62,7 +64,7 @@ const ContactInfo = () => {
         </p>
         <p style={infoP}>
           <i className="fa-thin fa-envelope" style={faIcon}></i>{" "}
-          info@vetmedika.rs
+          <EmailLink email="info@vetmedika.rs" color="black" />
         </p>
         <p style={infoP}>
           <i className="fa-thin fa-browser" style={faIcon}></i>www.vetmedika.rs
