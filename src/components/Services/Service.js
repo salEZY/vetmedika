@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     margin: "1rem 0 3rem 0",
   },
   link: {
-    fontSize: "1.2rem",
+    fontSize: "1.5rem",
     margin: "1rem auto",
   },
 }));

@@ -19,6 +19,14 @@ const useStyles = makeStyles((theme) => ({
   info: {
     margin: "2rem auto",
   },
+  infoP: {
+    margin: "1rem auto",
+    fontSize: "1.25rem",
+    color: "black !important",
+    [theme.breakpoints.down(700)]: {
+      fontSize: "1.1rem",
+    },
+  },
   workingHours: {
     marginTop: "5rem",
     [theme.breakpoints.down(700)]: {
@@ -37,12 +45,6 @@ const useStyles = makeStyles((theme) => ({
 const ContactInfo = () => {
   const classes = useStyles();
 
-  const infoP = {
-    margin: "1rem auto",
-    fontSize: "1.25rem",
-    color: "black !important",
-  };
-
   const faIcon = {
     color: "#50c878",
     marginRight: "10px",
@@ -54,31 +56,31 @@ const ContactInfo = () => {
     <div className={classes.container}>
       <Title title="Kontakt" cssStyle={{ margin: "1rem auto" }} />
       <div className={classes.info}>
-        <p style={infoP}>
+        <p className={classes.infoP}>
           <i className="fa-thin fa-location-pin" style={faIcon}></i>Vojvode
           Šupljikca 43, Vračar
         </p>
-        <p style={infoP}>
+        <p className={classes.infoP}>
           <i className="fa-thin fa-phone-rotary faIcon" style={faIcon}></i>{" "}
           011/3822-802, 011/3822-837
         </p>
-        <p style={infoP}>
+        <p className={classes.infoP}>
           <i className="fa-thin fa-envelope" style={faIcon}></i>{" "}
           <EmailLink email="info@vetmedika.rs" color="black" />
         </p>
-        <p style={infoP}>
+        <p className={classes.infoP}>
           <i className="fa-thin fa-browser" style={faIcon}></i>www.vetmedika.rs
         </p>
-        <p style={infoP}>
+        <p className={classes.infoP}>
           <i className="fa-thin fa-mobile-screen" style={faIcon}></i>{" "}
           063/1178-443, 064/9931-076
         </p>
       </div>
       <div className={classes.workingHours}>
         <h3>Radno vreme:</h3>
-        <p style={infoP}>Ponedeljak-Petak 09:00 - 19:00</p>
-        <p style={infoP}>Subota 10:00 - 14:00</p>
-        <p style={infoP}>Nedelja 10:00 - 12:00</p>
+        <p className={classes.infoP}>Ponedeljak-Petak 09:00 - 19:00</p>
+        <p className={classes.infoP}>Subota 10:00 - 14:00</p>
+        <p className={classes.infoP}>Nedelja 10:00 - 12:00</p>
       </div>
       <p className={classes.question}>
         Ukoliko imate bilo koje pitanje, ne ustručavajte se da nas pozovete.

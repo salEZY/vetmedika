@@ -17,24 +17,27 @@ const useStyles = makeStyles((theme) => ({
     padding: "2rem",
     background: "white",
     textAlign: "center",
+    border: "none",
     borderRadius: "10px",
     [theme.breakpoints.down(700)]: {
-      width: "90%",
+      width: "95%",
+      overflow: "clip",
     },
-    overflow: "scroll",
   },
   title: {
     margin: "2rem auto",
     fontSize: "2rem",
     [theme.breakpoints.down(700)]: {
       margin: "1rem auto",
+      fontSize: "1.5rem",
     },
   },
   item: {
     margin: "10px auto",
-    fontSize: "1.1rem",
+    fontSize: "1.2rem",
     [theme.breakpoints.down(700)]: {
       margin: "5px auto",
+      fontSize: "1rem",
     },
   },
 }));
@@ -43,7 +46,7 @@ const ServiceModal = ({ open, handleClose, type, title }) => {
   const classes = useStyles();
 
   return (
-    <Modal open={open} onClose={handleClose}>
+    <Modal open={open} onClose={handleClose} style={{ border: "none" }}>
       <div className={classes.servicesHolder}>
         <h3 className={classes.title}>{title}</h3>
         {data[type].map((d) => {
