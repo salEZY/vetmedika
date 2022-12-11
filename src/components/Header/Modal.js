@@ -11,7 +11,7 @@ const useStyles = makeStyles({
     height: "85vh",
     zIndex: 10,
     color: "white",
-    background: "linear-gradient(to right, #50c878, #50c85a)",
+    background: "linear-gradient(to right, #50c85a, #50c878)",
   },
   modalHolder: {
     marginTop: "15vh",

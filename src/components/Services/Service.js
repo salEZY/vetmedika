@@ -5,8 +5,8 @@ import axios from "axios";
 
 const useStyles = makeStyles((theme) => ({
   holder: {
-    width: "25%",
-    height: "300px",
+    width: "20%",
+    height: "340px",
     margin: "2rem",
     padding: "5px",
     display: "flex",
@@ -21,9 +21,13 @@ const useStyles = makeStyles((theme) => ({
     },
     border: "3px solid #353935",
     borderRadius: "5px",
+    [theme.breakpoints.down(1000)]: {
+      width: "30%",
+    },
     [theme.breakpoints.down(700)]: {
       margin: "1rem auto",
       width: "80%",
+      height: "300px",
     },
   },
   iconP: {
