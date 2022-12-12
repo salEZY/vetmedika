@@ -16,7 +16,6 @@ const useStyles = makeStyles((theme) => ({
     width: "50%",
     padding: "2rem",
     background: "white",
-    textAlign: "center",
     border: "none",
     borderRadius: "10px",
     [theme.breakpoints.down(700)]: {
@@ -34,6 +33,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   item: {
+    width: "100%",
+    textAlign: "left",
     margin: "10px auto",
     fontSize: "1.2rem",
     [theme.breakpoints.down(700)]: {

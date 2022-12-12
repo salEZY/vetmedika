@@ -20,8 +20,8 @@ const useStyles = makeStyles({
     display: "flex",
     flexDirection: "row",
     justifyContent: "center",
-    fontSize: "3.5rem",
-    marginTop: "3rem",
+    fontSize: "2rem",
+    marginTop: "1rem",
   },
   link: {
     textDecoration: "none",
@@ -40,7 +40,7 @@ const Modal = () => {
             flexDirection: "column",
             justifyContent: "space-apart",
           }}
-          customCssLink={{ margin: "2rem auto", fontSize: "2.5rem" }}
+          customCssLink={{ margin: "1.5rem auto", fontSize: "2.5rem" }}
         />
         <div className={classes.iconHolder}>
           <a
