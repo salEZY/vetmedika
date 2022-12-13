@@ -38,7 +38,7 @@ const data = {
     "Druge regije kao što su oči, štitna žlezda, mlečna žlezda i testisi mogu se pregledati ovom metodom veoma uspešno",
     "Rendgenska dijagnostika: Kao pomoćno dijagnostičko sredstvo omogućava precizniju dijagnozu, korišćenjem nativne i kontrastne tehnike. Najčešće metode: kontrast digestivnog sistema, mijelografija, pijelografija, pneumokontrastna dijagnostika.",
   ],
-  heart: ["Auskultacija", "EKG", "EHOKARDIOGRAFIJA"],
+  heart: ["Auskultacija", "Elektrokardiografija(EKG)", "Ehokardiografija"],
   derma: [
     "Terapija raznih vrsta alopecija",
     "Terapija svraba(pruritusa) različitog porekla",

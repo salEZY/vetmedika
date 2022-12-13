@@ -4,6 +4,8 @@ import { Carousel } from "react-responsive-carousel";
 import baner1 from "../../assets/baner1.jpg";
 import baner2 from "../../assets/baner2.jpg";
 import baner3 from "../../assets/baner3.jpg";
+import baner4 from "../../assets/baner4.jpg";
+import baner5 from "../../assets/baner5.jpg";
 
 const CarouselComponent = () => {
   return (
@@ -16,7 +18,13 @@ const CarouselComponent = () => {
       showThumbs={false}
     >
       <div>
+        <img src={baner5} alt="baner5" />
+      </div>
+      <div>
         <img src={baner1} alt="baner1" />
+      </div>
+      <div>
+        <img src={baner4} alt="baner4" />
       </div>
       <div>
         <img src={baner2} alt="baner2" />
