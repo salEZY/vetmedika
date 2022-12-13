@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Modal from "@mui/material/Modal";
 import { makeStyles } from "@mui/styles";
 import data from "../../util/data";

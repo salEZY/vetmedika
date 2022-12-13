@@ -1,7 +1,6 @@
 import React from "react";
 import { makeStyles } from "@mui/styles";
 import Navigation from "../FormsUI/Navigation/Navigation";
-import EmailLink from "../FormsUI/EmailLink";
 
 const useStyles = makeStyles({
   modal: {
@@ -47,6 +46,7 @@ const Modal = () => {
             href="https://www.google.com/maps/place/Vetmedika/@44.7983815,20.4865414,15z/data=!4m5!3m4!1s0x0:0xb6fa8b00afcfac19!8m2!3d44.7983345!4d20.4864682"
             className={classes.link}
             target="_blank"
+            rel="noopener noreferrer"
           >
             <i
               className="fa-thin fa-map-location"
