@@ -12,8 +12,10 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     alignContent: "center",
+    order: "2",
     [theme.breakpoints.down(700)]: {
       width: "100%",
+      order: "1",
     },
   },
   info: {
@@ -57,6 +59,10 @@ const ContactInfo = () => {
       <Title title="Kontakt" cssStyle={{ margin: "1rem auto" }} />
       <div className={classes.info}>
         <p className={classes.infoP}>
+          <i className="fa-thin fa-city" style={faIcon}></i> 11000 Beograd,
+          Srbija
+        </p>
+        <p className={classes.infoP}>
           <i className="fa-thin fa-location-pin" style={faIcon}></i>Vojvode
           Šupljikca 43, Vračar
         </p>
@@ -65,15 +71,15 @@ const ContactInfo = () => {
           011/3822-802, 011/3822-837
         </p>
         <p className={classes.infoP}>
+          <i className="fa-thin fa-mobile-screen" style={faIcon}></i>{" "}
+          063/1178-443, 064/9931-076
+        </p>
+        <p className={classes.infoP}>
           <i className="fa-thin fa-envelope" style={faIcon}></i>{" "}
           <EmailLink email="info@vetmedika.rs" color="black" />
         </p>
         <p className={classes.infoP}>
           <i className="fa-thin fa-browser" style={faIcon}></i>www.vetmedika.rs
-        </p>
-        <p className={classes.infoP}>
-          <i className="fa-thin fa-mobile-screen" style={faIcon}></i>{" "}
-          063/1178-443, 064/9931-076
         </p>
       </div>
       <div className={classes.workingHours}>
