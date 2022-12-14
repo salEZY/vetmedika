@@ -13,7 +13,6 @@ const useStyles = makeStyles((theme) => ({
   carouselDiv: {
     width: "70%",
     margin: "3rem auto",
-    // padding: 20,
   },
   contactButton: {
     width: "50%",
@@ -37,6 +36,14 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "1.2rem",
       padding: "10px",
     },
+    infoDiv: {
+      fontSize: 20,
+      margin: "3rem auto",
+      [theme.breakpoints.down(700)]: {
+        fontSize: 15,
+        margin: "2rem auto",
+      },
+    },
   },
 }));
 
@@ -49,7 +56,7 @@ const Home = () => {
       <div className={classes.carouselDiv}>
         <CarouselComponent />
       </div>
-      <div style={{ fontSize: 20, margin: "3rem auto" }}>
+      <div className={classes.infoDiv}>
         Naša ambulanta postoji od 2002. godine i zahvaljujući vašem poverenju,
         još uvek smo tu, u službi zdravlja vaših ljubimaca. Naše poslovanje se
         zasniva isključivo na temeljima savremene Veterinarske medicine, tj. uz

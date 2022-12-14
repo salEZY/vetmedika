@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down(700)]: {
       margin: "1rem auto",
       width: "80%",
-      height: "300px",
+      height: "250px",
     },
   },
   iconP: {
@@ -36,6 +36,9 @@ const useStyles = makeStyles((theme) => ({
   link: {
     fontSize: "1.5rem",
     margin: "1rem auto",
+    [theme.breakpoints.down(700)]: {
+      fontSize: "1.25rem",
+    },
   },
 }));
 
