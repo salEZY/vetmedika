@@ -9,10 +9,6 @@ const Header = () => {
   const appCtx = useContext(AppContext);
   const ref = useRef(null);
 
-  const reloadPage = () => {
-    window.location.reload();
-  };
-
   let imgSrc =
     appCtx.width > 700
       ? require("../../assets/logo.png")
@@ -20,12 +16,16 @@ const Header = () => {
 
   return (
     <header ref={ref}>
-      <div className="logo" onClick={reloadPage} style={{ cursor: "pointer" }}>
-        <img src={imgSrc} alt="Vetmedika logo" className="logoImg" />
+      <div className="logo" style={{ cursor: "pointer" }}>
+        <a href="/">
+          <img src={imgSrc} alt="Vetmedika logo" className="logoImg" />
+        </a>
       </div>
-      <div className="nav-holder">
-        <Navigation customCssDiv={{ paddingRight: "2rem" }} />
-      </div>
+      {!window.location.href.includes("/prijava") && (
+        <div className="nav-holder">
+          <Navigation customCssDiv={{ paddingRight: "2rem" }} />
+        </div>
+      )}
 
       <div className="burger">
         {appCtx.burger ? (

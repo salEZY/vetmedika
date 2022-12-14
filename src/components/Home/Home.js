@@ -11,14 +11,14 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
   },
   carouselDiv: {
-    width: "70%",
-    margin: "3rem auto",
+    width: "75%",
+    margin: "2rem auto",
   },
   contactButton: {
     width: "50%",
     fontSize: "2rem",
     fontWeight: "bolder",
-    margin: "2rem auto",
+    margin: "1rem auto",
     padding: "10px 100px",
     borderRadius: "5px",
     transition: ".2s all ease",
