@@ -21,9 +21,9 @@ const Header = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const reloadPage = () => {
-    window.location.reload();
-  };
+  // const reloadPage = () => {
+  //   window.location.reload();
+  // };
 
   let imgSrc =
     windowSize > 700
@@ -32,12 +32,16 @@ const Header = () => {
 
   return (
     <header ref={ref}>
-      <div className="logo" onClick={reloadPage} style={{ cursor: "pointer" }}>
-        <img src={imgSrc} alt="Vetmedika logo" className="logoImg" />
+      <div className="logo" style={{ cursor: "pointer" }}>
+        <a href="/">
+          <img src={imgSrc} alt="Vetmedika logo" className="logoImg" />
+        </a>
       </div>
-      <div className="nav-holder">
-        <Navigation customCssDiv={{ paddingRight: "2rem" }} />
-      </div>
+      {!window.location.href.includes("/prijava") && (
+        <div className="nav-holder">
+          <Navigation customCssDiv={{ paddingRight: "2rem" }} />
+        </div>
+      )}
 
       <div className="burger">
         {appCtx.burger ? (

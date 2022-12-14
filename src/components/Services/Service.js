@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@mui/styles";
 import ServiceModal from "./ServiceModal";
 
@@ -20,9 +20,13 @@ const useStyles = makeStyles((theme) => ({
     },
     border: "3px solid #353935",
     borderRadius: "5px",
+    [theme.breakpoints.down(1000)]: {
+      width: "30%",
+    },
     [theme.breakpoints.down(700)]: {
       margin: "1rem auto",
       width: "80%",
+      height: "300px",
     },
   },
   iconP: {
