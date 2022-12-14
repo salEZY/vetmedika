@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { makeStyles } from "@mui/styles";
 import ServiceModal from "./ServiceModal";
-import axios from "axios";
 
 const useStyles = makeStyles((theme) => ({
   holder: {
-    width: "25%",
+    width: "20%",
     height: "300px",
     margin: "2rem",
     padding: "5px",
