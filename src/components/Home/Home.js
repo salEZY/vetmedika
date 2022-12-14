@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
   },
   carouselDiv: {
-    width: "70%",
+    width: "75%",
     margin: "3rem auto",
     // padding: 20,
   },
