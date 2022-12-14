@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import { makeStyles } from "@mui/styles";
+import { AppContext } from "../../util/app-context";
 
 const useStyles = makeStyles((theme) => ({
   map: {
@@ -17,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Map = ({ height }) => {
+  const appContext = useContext(AppContext);
   const classes = useStyles();
 
   return (
@@ -25,7 +27,7 @@ const Map = ({ height }) => {
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11324.550955533508!2d20.4865414!3d44.7983815!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb6fa8b00afcfac19!2sVetmedika!5e0!3m2!1sen!2srs!4v1665820137064!5m2!1sen!2srs"
         className={classes.iFrame}
         width="100%"
-        height={height}
+        height={appContext.width > 700 ? height : height / 2}
         allowFullScreen=""
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"

@@ -5,14 +5,16 @@ import Service from "./Service";
 const useStyles = makeStyles((theme) => ({
   container: {
     width: "100%",
-    margin: "1rem auto",
-    padding: "5px",
+    margin: "0 auto",
+    padding: "1rem",
+    paddingTop: "3rem",
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-around",
     flexWrap: "wrap",
     [theme.breakpoints.down(700)]: {
       flexDirection: "column",
+      paddingTop: "1rem",
     },
   },
 }));

@@ -15,12 +15,14 @@ import { ProtectedLayout } from "./routing/ProtectedLayout";
 import { AppContext } from "./util/app-context";
 import { useAction } from "./util/action-hook";
 import { useHeader } from "./util/header-hook";
+import { useWidth } from "./util/width-hook";
 
 const theme = createTheme();
 
 function App() {
   const { action } = useAction();
   const { burger, modal, headerHandler, linkHandler } = useHeader();
+  const { width } = useWidth();
 
   return (
     <ThemeProvider theme={theme}>
@@ -30,6 +32,7 @@ function App() {
             action: action,
             burger: burger,
             modal: modal,
+            width: width,
             headerHandler: headerHandler,
             linkHandler: linkHandler,
           }}

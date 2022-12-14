@@ -1,4 +1,4 @@
-import React, { useRef, useLayoutEffect, useState, useContext } from "react";
+import React, { useRef, useContext } from "react";
 import { AppContext } from "../../util/app-context";
 import Navigation from "../FormsUI/Navigation/Navigation";
 import Modal from "./Modal";
@@ -9,24 +9,8 @@ const Header = () => {
   const appCtx = useContext(AppContext);
   const ref = useRef(null);
 
-  const [windowSize, setWindowSize] = useState(window.innerWidth);
-
-  useLayoutEffect(() => {
-    const handleResize = () => {
-      setWindowSize(window.innerWidth);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  // const reloadPage = () => {
-  //   window.location.reload();
-  // };
-
   let imgSrc =
-    windowSize > 700
+    appCtx.width > 700
       ? require("../../assets/logo.png")
       : require("../../assets/logoSmall.png");
 
