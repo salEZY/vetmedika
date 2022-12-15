@@ -5,7 +5,7 @@ import ServiceModal from "./ServiceModal";
 const useStyles = makeStyles((theme) => ({
   holder: {
     width: "20%",
-    height: "300px",
+    height: "350px",
     margin: "2rem",
     padding: "5px",
     display: "flex",
@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down(700)]: {
       margin: "1rem auto",
-      width: "80%",
+      width: "90%",
       height: "250px",
     },
   },

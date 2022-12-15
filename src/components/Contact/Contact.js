@@ -5,7 +5,7 @@ import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    minHeight: "90vh",
+    minHeight: "100vh",
     width: "100%",
     [theme.breakpoints.down(700)]: {
       width: "100%",

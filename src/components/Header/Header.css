@@ -5,7 +5,6 @@ header {
   flex-direction: row;
   background: linear-gradient(to right, #50c878, #50c85a);
   color: white;
-  margin-bottom: 1rem;
   justify-content: space-between;
 }
 
