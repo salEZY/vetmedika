@@ -1,5 +1,4 @@
 import React from "react";
-import Container from "@mui/material/Container";
 import Title from "../FormsUI/Title/Title";
 import { makeStyles } from "@mui/styles";
 import CarouselComponent from "../Carousel/Carousel";
@@ -9,13 +8,14 @@ const useStyles = makeStyles((theme) => ({
   container: {
     minHeight: "85vh",
     width: "100%",
+    padding: "1rem",
   },
   carouselDiv: {
-    width: "75%",
-    margin: "2rem auto",
+    width: "50%",
+    margin: "1rem auto",
   },
   contactButton: {
-    width: "50%",
+    width: "40%",
     fontSize: "2rem",
     fontWeight: "bolder",
     margin: "1rem auto",
@@ -36,13 +36,16 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "1.2rem",
       padding: "10px",
     },
-    infoDiv: {
-      fontSize: 20,
-      margin: "3rem auto",
-      [theme.breakpoints.down(700)]: {
-        fontSize: 15,
-        margin: "2rem auto",
-      },
+  },
+  infoDiv: {
+    paddingLeft: "1rem",
+    paddingRight: "1rem",
+    fontSize: 20,
+    textAlign: "left",
+    margin: "2rem auto",
+    [theme.breakpoints.down(700)]: {
+      fontSize: 15,
+      margin: "2rem auto",
     },
   },
 }));
@@ -51,8 +54,8 @@ const Home = () => {
   const classes = useStyles();
 
   return (
-    <Container className={classes.container}>
-      <Title title="Dobrodošli" cssStyle={{ margin: "2rem auto" }} />
+    <div className={classes.container}>
+      <Title title="Dobrodošli" cssStyle={{ margin: "1rem auto" }} />
       <div className={classes.carouselDiv}>
         <CarouselComponent />
       </div>
@@ -74,9 +77,9 @@ const Home = () => {
         duration={300}
         style={{ width: "100%" }}
       >
-        <button className={classes.contactButton}>Kontaktirajte nas</button>
+        <button className={classes.contactButton}>Kontakt</button>
       </Link>
-    </Container>
+    </div>
   );
 };
 
