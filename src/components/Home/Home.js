@@ -10,12 +10,34 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     padding: "1rem",
   },
+  contentHolder: {
+    width: "100%",
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "center",
+    [theme.breakpoints.down(700)]: {
+      flexDirection: "column",
+    },
+  },
   carouselDiv: {
     width: "50%",
     margin: "1rem auto",
+    [theme.breakpoints.down(700)]: {
+      display: "none",
+    },
+  },
+  textDiv: {
+    width: "50%",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignContent: "center",
+    [theme.breakpoints.down(700)]: {
+      width: "100%",
+    },
   },
   contactButton: {
-    width: "40%",
+    width: "90%",
     fontSize: "2rem",
     fontWeight: "bolder",
     margin: "1rem auto",
@@ -37,15 +59,17 @@ const useStyles = makeStyles((theme) => ({
       padding: "10px",
     },
   },
+  icons: {
+    fontSize: "5rem",
+  },
   infoDiv: {
-    paddingLeft: "1rem",
-    paddingRight: "1rem",
+    padding: "2rem",
     fontSize: 20,
     textAlign: "left",
     margin: "2rem auto",
     [theme.breakpoints.down(700)]: {
       fontSize: 15,
-      margin: "2rem auto",
+      margin: "10px auto",
     },
   },
 }));
@@ -55,30 +79,41 @@ const Home = () => {
 
   return (
     <div className={classes.container}>
-      <Title title="Dobrodošli" cssStyle={{ margin: "1rem auto" }} />
-      <div className={classes.carouselDiv}>
-        <CarouselComponent />
-      </div>
-      <div className={classes.infoDiv}>
-        Naša ambulanta postoji od 2002. godine i zahvaljujući vašem poverenju,
-        još uvek smo tu, u službi zdravlja vaših ljubimaca. Naše poslovanje se
-        zasniva isključivo na temeljima savremene Veterinarske medicine, tj. uz
-        kompletnu kliničku dijagnostiku, nalazimo najbolje rešenje za terapiju
-        vašeg ljubimca, što i vas kao vlasnika oslobadja od nepotrebnih
-        troškova. Ovakav pristup je pokazao odlicne rezultate i mi danas imamo
-        preko hiljadu zadovoljnih vlasnika i pacijenata uvedenih u našu bazu
-        podataka.
-      </div>
+      <Title title="Dobrodošli" cssStyle={{ margin: "2rem auto" }} />
+      <div className={classes.contentHolder}>
+        <div className={classes.carouselDiv}>
+          <CarouselComponent />
+        </div>
+        <div className={classes.textDiv}>
+          <div className={classes.icons}>
+            <i className="fa-duotone fa-dog"></i>
+            <i
+              className="fa-duotone fa-cat"
+              style={{ transform: "scaleX(-1)" }}
+            ></i>
+          </div>
+          <div className={classes.infoDiv}>
+            Naša ambulanta postoji od 2002. godine i zahvaljujući vašem
+            poverenju, još uvek smo tu, u službi zdravlja vaših ljubimaca. Naše
+            poslovanje se zasniva isključivo na temeljima savremene Veterinarske
+            medicine, tj. uz kompletnu kliničku dijagnostiku, nalazimo najbolje
+            rešenje za terapiju vašeg ljubimca, što i vas kao vlasnika oslobadja
+            od nepotrebnih troškova. Ovakav pristup je pokazao odlicne rezultate
+            i mi danas imamo preko hiljadu zadovoljnih vlasnika i pacijenata
+            uvedenih u našu bazu podataka.
+          </div>
 
-      <Link
-        to="contact"
-        spy={true}
-        smooth={true}
-        duration={300}
-        style={{ width: "100%" }}
-      >
-        <button className={classes.contactButton}>Kontakt</button>
-      </Link>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            duration={300}
+            style={{ width: "100%" }}
+          >
+            <button className={classes.contactButton}>Kontakt</button>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 };
