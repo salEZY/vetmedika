@@ -1,6 +1,7 @@
 import React from "react";
 import Title from "../FormsUI/Title/Title";
 import { makeStyles } from "@mui/styles";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import CarouselComponent from "../Carousel/Carousel";
 import { Link } from "react-scroll";
 
@@ -61,6 +62,9 @@ const useStyles = makeStyles((theme) => ({
   },
   icons: {
     fontSize: "5rem",
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "center",
   },
   infoDiv: {
     padding: "2rem",
@@ -86,11 +90,25 @@ const Home = () => {
         </div>
         <div className={classes.textDiv}>
           <div className={classes.icons}>
-            <i className="fa-duotone fa-dog"></i>
-            <i
-              className="fa-duotone fa-cat"
-              style={{ transform: "scaleX(-1)" }}
-            ></i>
+            <AnimationOnScroll
+              animateIn="animate__fadeInLeftBig"
+              animateOnce={true}
+              delay={50}
+              animatePreScroll={false}
+            >
+              <i className="fa-thin fa-dog"></i>
+            </AnimationOnScroll>
+            <AnimationOnScroll
+              animateIn="animate__fadeInRightBig"
+              animateOnce={true}
+              delay={100}
+              animatePreScroll={false}
+            >
+              <i
+                className="fa-thin fa-cat"
+                style={{ transform: "scaleX(-1)" }}
+              ></i>
+            </AnimationOnScroll>
           </div>
           <div className={classes.infoDiv}>
             Naša ambulanta postoji od 2002. godine i zahvaljujući vašem
