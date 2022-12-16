@@ -21,6 +21,10 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   carouselDiv: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
     width: "50%",
     margin: "1rem auto",
     [theme.breakpoints.down(700)]: {
@@ -72,7 +76,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     margin: "2rem auto",
     [theme.breakpoints.down(700)]: {
-      fontSize: 15,
+      fontSize: 16,
       margin: "10px auto",
     },
   },
