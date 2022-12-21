@@ -2,7 +2,7 @@
 import axios from "axios";
 
 export const axiosAuth = axios.create({
-  baseURL: "http://localhost:6060/",
+  baseURL: "https://vetmedika-api.herokuapp.com/",
 });
 
 axiosAuth.interceptors.request.use((config) => {

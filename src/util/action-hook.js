@@ -5,7 +5,9 @@ export const useAction = () => {
   const [action, setAction] = useState({});
 
   const fetchAction = async () => {
-    const res = await axios("http://localhost:6060/api/action/get/active");
+    const res = await axios(
+      "https://vetmedika-api.herokuapp.com/api/action/get/active"
+    );
     setAction(res.data);
   };
 
