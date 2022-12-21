@@ -21,6 +21,10 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   carouselDiv: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
     width: "50%",
     margin: "1rem auto",
     [theme.breakpoints.down(700)]: {
@@ -35,14 +39,16 @@ const useStyles = makeStyles((theme) => ({
     alignContent: "center",
     [theme.breakpoints.down(700)]: {
       width: "100%",
+      minHeight: "70vh",
+      justifyContent: "space-around",
     },
   },
   contactButton: {
-    width: "90%",
+    width: "70%",
     fontSize: "2rem",
     fontWeight: "bolder",
     margin: "1rem auto",
-    padding: "10px 100px",
+    padding: "10px",
     borderRadius: "5px",
     transition: ".2s all ease",
     background: "white",
@@ -65,15 +71,19 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "row",
     justifyContent: "center",
+    [theme.breakpoints.down(700)]: {
+      fontSize: "4rem",
+    },
   },
   infoDiv: {
     padding: "2rem",
-    fontSize: 20,
+    fontSize: 22,
     textAlign: "left",
     margin: "2rem auto",
     [theme.breakpoints.down(700)]: {
-      fontSize: 15,
+      fontSize: 17,
       margin: "10px auto",
+      padding: "1rem",
     },
   },
 }));
@@ -83,7 +93,7 @@ const Home = () => {
 
   return (
     <div className={classes.container}>
-      <Title title="Dobrodošli" cssStyle={{ margin: "2rem auto" }} />
+      <Title title="Dobrodošli" cssStyle={{ margin: "1.5rem auto" }} />
       <div className={classes.contentHolder}>
         <div className={classes.carouselDiv}>
           <CarouselComponent />

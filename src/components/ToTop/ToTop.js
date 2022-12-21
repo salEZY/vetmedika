@@ -1,13 +1,9 @@
 import React, { useState } from "react";
 import { css } from "@emotion/css";
-//import { makeStyles } from "@mui/styles";
 
 import "./ToTop.css";
 
-//const useStyles = makeStyles({});
-
 const ToTop = () => {
-  //const classes = useStyles();
   const [bottom, setBottom] = useState("5%");
   const [right, setRight] = useState("-120px");
 
@@ -50,7 +46,7 @@ const ToTop = () => {
         document.documentElement.scrollTop = 0;
       }}
     >
-      <i className="fa-thin fa-circle-chevron-up" id="arrow"></i>
+      <i className="fa-sharp fa-circle-chevron-up" id="arrow"></i>
     </span>
   );
 };
