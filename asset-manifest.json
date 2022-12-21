@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.5e600d11.css",
-    "main.js": "/react-gh-pages/static/js/main.982a23a3.js",
-    "static/media/baner4.jpg": "/react-gh-pages/static/media/baner4.f34fb21e973216d11f8a.jpg",
-    "static/media/baner3.jpg": "/react-gh-pages/static/media/baner3.0e749d731ce302d5fe42.jpg",
-    "static/media/baner1.jpg": "/react-gh-pages/static/media/baner1.a3993d4ce0e325868e06.jpg",
-    "static/media/baner2.jpg": "/react-gh-pages/static/media/baner2.60e15595c705c4b1a9f0.jpg",
-    "static/media/baner5.jpg": "/react-gh-pages/static/media/baner5.4a6de7987e8f7886de68.jpg",
-    "static/media/logo.png": "/react-gh-pages/static/media/logo.145783ae0bcbb7f8fca6.png",
-    "index.html": "/react-gh-pages/index.html",
-    "main.5e600d11.css.map": "/react-gh-pages/static/css/main.5e600d11.css.map",
-    "main.982a23a3.js.map": "/react-gh-pages/static/js/main.982a23a3.js.map"
+    "main.css": "/vetmedika/static/css/main.5e600d11.css",
+    "main.js": "/vetmedika/static/js/main.7109c216.js",
+    "static/media/baner4.jpg": "/vetmedika/static/media/baner4.f34fb21e973216d11f8a.jpg",
+    "static/media/baner3.jpg": "/vetmedika/static/media/baner3.0e749d731ce302d5fe42.jpg",
+    "static/media/baner1.jpg": "/vetmedika/static/media/baner1.a3993d4ce0e325868e06.jpg",
+    "static/media/baner2.jpg": "/vetmedika/static/media/baner2.60e15595c705c4b1a9f0.jpg",
+    "static/media/baner5.jpg": "/vetmedika/static/media/baner5.4a6de7987e8f7886de68.jpg",
+    "static/media/logo.png": "/vetmedika/static/media/logo.145783ae0bcbb7f8fca6.png",
+    "index.html": "/vetmedika/index.html",
+    "main.5e600d11.css.map": "/vetmedika/static/css/main.5e600d11.css.map",
+    "main.7109c216.js.map": "/vetmedika/static/js/main.7109c216.js.map"
   },
   "entrypoints": [
     "static/css/main.5e600d11.css",
-    "static/js/main.982a23a3.js"
+    "static/js/main.7109c216.js"
   ]
 }
