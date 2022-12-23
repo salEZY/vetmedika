@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/vetmedika/static/css/main.5e600d11.css",
-    "main.js": "/vetmedika/static/js/main.704b5de0.js",
+    "main.js": "/vetmedika/static/js/main.78f8a63b.js",
     "static/media/baner4.jpg": "/vetmedika/static/media/baner4.f34fb21e973216d11f8a.jpg",
     "static/media/baner3.jpg": "/vetmedika/static/media/baner3.0e749d731ce302d5fe42.jpg",
     "static/media/baner1.jpg": "/vetmedika/static/media/baner1.a3993d4ce0e325868e06.jpg",
@@ -10,10 +10,10 @@
     "static/media/logo.png": "/vetmedika/static/media/logo.145783ae0bcbb7f8fca6.png",
     "index.html": "/vetmedika/index.html",
     "main.5e600d11.css.map": "/vetmedika/static/css/main.5e600d11.css.map",
-    "main.704b5de0.js.map": "/vetmedika/static/js/main.704b5de0.js.map"
+    "main.78f8a63b.js.map": "/vetmedika/static/js/main.78f8a63b.js.map"
   },
   "entrypoints": [
     "static/css/main.5e600d11.css",
-    "static/js/main.704b5de0.js"
+    "static/js/main.78f8a63b.js"
   ]
 }
