@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/vetmedika/static/css/main.5e600d11.css",
-    "main.js": "/vetmedika/static/js/main.5dfb1b6f.js",
-    "static/media/baner4.jpg": "/vetmedika/static/media/baner4.f34fb21e973216d11f8a.jpg",
-    "static/media/baner3.jpg": "/vetmedika/static/media/baner3.0e749d731ce302d5fe42.jpg",
-    "static/media/baner1.jpg": "/vetmedika/static/media/baner1.a3993d4ce0e325868e06.jpg",
-    "static/media/baner2.jpg": "/vetmedika/static/media/baner2.60e15595c705c4b1a9f0.jpg",
-    "static/media/baner5.jpg": "/vetmedika/static/media/baner5.4a6de7987e8f7886de68.jpg",
-    "static/media/logo.png": "/vetmedika/static/media/logo.145783ae0bcbb7f8fca6.png",
-    "index.html": "/vetmedika/index.html",
-    "main.5e600d11.css.map": "/vetmedika/static/css/main.5e600d11.css.map",
-    "main.5dfb1b6f.js.map": "/vetmedika/static/js/main.5dfb1b6f.js.map"
+    "main.css": "/vetmedika/pocetna/static/css/main.5e600d11.css",
+    "main.js": "/vetmedika/pocetna/static/js/main.eb569d4c.js",
+    "static/media/baner4.jpg": "/vetmedika/pocetna/static/media/baner4.f34fb21e973216d11f8a.jpg",
+    "static/media/baner3.jpg": "/vetmedika/pocetna/static/media/baner3.0e749d731ce302d5fe42.jpg",
+    "static/media/baner1.jpg": "/vetmedika/pocetna/static/media/baner1.a3993d4ce0e325868e06.jpg",
+    "static/media/baner2.jpg": "/vetmedika/pocetna/static/media/baner2.60e15595c705c4b1a9f0.jpg",
+    "static/media/baner5.jpg": "/vetmedika/pocetna/static/media/baner5.4a6de7987e8f7886de68.jpg",
+    "static/media/logo.png": "/vetmedika/pocetna/static/media/logo.145783ae0bcbb7f8fca6.png",
+    "index.html": "/vetmedika/pocetna/index.html",
+    "main.5e600d11.css.map": "/vetmedika/pocetna/static/css/main.5e600d11.css.map",
+    "main.eb569d4c.js.map": "/vetmedika/pocetna/static/js/main.eb569d4c.js.map"
   },
   "entrypoints": [
     "static/css/main.5e600d11.css",
-    "static/js/main.5dfb1b6f.js"
+    "static/js/main.eb569d4c.js"
   ]
 }
