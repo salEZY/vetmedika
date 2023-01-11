@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
 const ActionDisplay = ({ action }) => {
   const classes = useStyles();
   return (
-    <div style={{ textAlign: "left" }}>
+    <div style={{ textAlign: "center" }}>
       <h2 className={classes.title}>{action.title}</h2>
       <p className={classes.paragraph}>
         Traje od <span className={classes.date}>{action.from}</span> do{" "}

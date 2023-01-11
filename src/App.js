@@ -20,7 +20,7 @@ import { useWidth } from "./util/width-hook";
 const theme = createTheme();
 
 function App() {
-  const { action } = useAction();
+  const { action, loading } = useAction();
   const { burger, modal, headerHandler, linkHandler } = useHeader();
   const { width } = useWidth();
 
@@ -29,6 +29,7 @@ function App() {
       <StyledEngineProvider injectFirst>
         <AppContext.Provider
           value={{
+            loading: loading,
             action: action,
             burger: burger,
             modal: modal,
@@ -40,7 +41,7 @@ function App() {
           <div className="App">
             <Routes>
               <Route element={<HomeLayout />}>
-                <Route path="/" element={<AllPages />} />
+                <Route path="" element={<AllPages />} />
                 <Route path="/prijava" element={<Login />} />
               </Route>
 

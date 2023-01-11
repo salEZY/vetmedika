@@ -5,3 +5,8 @@
 p {
   font-family: Arial;
 }
+
+:root {
+  --titlePrimary: #50c878;
+  --titleAction: #fff;
+}

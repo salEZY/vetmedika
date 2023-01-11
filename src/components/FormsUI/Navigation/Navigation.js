@@ -8,19 +8,17 @@ const Navigation = ({ customCssDiv, customCssLink }) => {
   const appContext = useContext(AppContext);
   return (
     <div className="nav" style={customCssDiv}>
-      {appContext.action.active && (
-        <p style={customCssLink}>
-          <Link
-            to="action"
-            spy={true}
-            smooth={true}
-            duration={300}
-            onClick={appContext.linkHandler}
-          >
-            Akcije
-          </Link>
-        </p>
-      )}
+      <p style={customCssLink}>
+        <Link
+          to="action"
+          spy={true}
+          smooth={true}
+          duration={300}
+          onClick={appContext.linkHandler}
+        >
+          Akcije
+        </Link>
+      </p>
 
       <p style={customCssLink}>
         <Link

@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <header ref={ref}>
       <div className="logo" style={{ cursor: "pointer" }}>
-        <a href="/">
+        <a href="/vetmedika">
           <img src={imgSrc} alt="Vetmedika logo" className="logoImg" />
         </a>
       </div>
