@@ -27,12 +27,14 @@ const useStyles = makeStyles({
 const Action = () => {
   const classes = useStyles();
   const appContext = useContext(AppContext);
-  console.log(appContext.loading);
+
   return (
     <>
       <div className={classes.container} id="action">
         {appContext.loading ? (
-          <LinearProgress style={{ background: "white" }} />
+          <LinearProgress
+            style={{ background: "white", height: "5px", width: "80%" }}
+          />
         ) : (
           <>
             {appContext.action.active ? (
