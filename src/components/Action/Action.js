@@ -5,7 +5,7 @@ import { makeStyles } from "@mui/styles";
 import Title from "../FormsUI/Title/Title";
 import ActionDisplay from "./ActionDisplay";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   container: {
     minHeight: "30vh",
     width: "100%",
@@ -22,7 +22,30 @@ const useStyles = makeStyles({
     margin: "2rem",
     padding: "1rem",
   },
-});
+  phoneButton: {
+    textDecoration: "none",
+    display: "block",
+    width: "100%",
+    fontSize: "1.5rem",
+    fontWeight: "bolder",
+    margin: "1rem auto",
+    padding: "10px",
+    borderRadius: "5px",
+    transition: ".2s all ease",
+    background: "linear-gradient(to right, #50c878 , #50c85a)",
+    color: "white",
+    cursor: "pointer",
+    outline: "0",
+    border: "4px solid white",
+    "&:hover": {
+      background: "white",
+      color: "#50c878",
+    },
+    [theme.breakpoints.down(700)]: {
+      fontSize: "1.2rem",
+    },
+  },
+}));
 
 const Action = () => {
   const classes = useStyles();
@@ -43,7 +66,12 @@ const Action = () => {
                 <ActionDisplay action={appContext.action} />
               </div>
             ) : (
-              <p style={{ fontSize: "1.5rem" }}>Uskoro nove akcije!</p>
+              <div>
+                <p style={{ fontSize: "1.5rem" }}>Uskoro nove akcije!</p>
+                <a href="tel:011 3822 802" className={classes.phoneButton}>
+                  Pozovite nas
+                </a>
+              </div>
             )}
           </>
         )}
