@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
   footer: {
     width: "100%",
     minHeight: "10vh",
-    background: "#353935",
+    background: "linear-gradient(to right, #353935, #0f100f)",
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-around",
