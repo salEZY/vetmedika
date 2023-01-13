@@ -1,6 +1,7 @@
 import React from "react";
 import { makeStyles } from "@mui/styles";
 import Service from "./Service";
+import { serviceInfo } from "../../util/data";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -24,30 +25,17 @@ const ServicesList = () => {
 
   return (
     <div className={classes.container}>
-      <Service
-        icon="fa-thin fa-stethoscope"
-        title="Internistički kabinet"
-        type="intern"
-      />
-      <Service icon="fa-thin fa-tooth" title="Stomatologija" type="teeth" />
-      <Service icon="fa-thin fa-eye" title="Oftamološki kabinet" type="oftal" />
-      <Service
-        icon="fa-thin fa-scalpel-line-dashed"
-        title="Hirurgija"
-        type="surgery"
-      />
-      <Service
-        icon="fa-thin fa-x-ray"
-        title="Ultrazvuk i Rendgen"
-        type="xray"
-      />
-      <Service icon="fa-thin fa-heart" title="Kardiologija" type="heart" />
-      <Service icon="fa-thin fa-paw" title="Dermatologija" type="derma" />
-      <Service
-        icon="fa-thin fa-toothbrush"
-        title="Ulepšavanje i održavanje higijene kućnih ljubimaca"
-        type="grooming"
-      />
+      {serviceInfo &&
+        serviceInfo?.map((item) => {
+          return (
+            <Service
+              icon={item.icon}
+              title={item.title}
+              type={item.type}
+              key={item.title}
+            />
+          );
+        })}
     </div>
   );
 };

@@ -1,4 +1,4 @@
-const data = {
+export const data = {
   intern: [
     "Gastroenterologija",
     "Urologija",
@@ -56,4 +56,49 @@ const data = {
   ],
 };
 
-export default data;
+export const serviceInfo = [
+  {
+    icon: "fa-thin fa-stethoscope",
+    title: "Internistički kabinet",
+    type: "intern",
+  },
+  {
+    icon: "fa-thin fa-tooth",
+    title: "Stomatologija",
+    type: "teeth",
+  },
+  {
+    icon: "fa-thin fa-eye",
+    title: "Oftamološki kabinet",
+    type: "oftal",
+  },
+  {
+    icon: "fa-thin fa-scalpel-line-dashed",
+    title: "Hirurgija",
+    type: "surgery",
+  },
+  {
+    icon: "fa-thin fa-x-ray",
+    title: "Ultrazvuk i Rendgen",
+    type: "xray",
+  },
+  {
+    icon: "fa-thin fa-heart",
+    title: "Kardiologija",
+    type: "heart",
+  },
+  {
+    icon: "fa-thin fa-paw",
+    title: "Dermatologija",
+    type: "derma",
+  },
+  {
+    icon: "fa-thin fa-toothbrush",
+    title: "Ulepšavanje i održavanje higijene kućnih ljubimaca",
+    type: "grooming",
+  },
+];
+
+let obj = {};
+
+export default obj;

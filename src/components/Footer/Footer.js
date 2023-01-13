@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@mui/styles";
 import Navigation from "../FormsUI/Navigation/Navigation";
-import EmailLink from "../FormsUI/EmailLink";
+import CustomLink from "../FormsUI/CustomLink";
 
 const useStyles = makeStyles((theme) => ({
   footer: {
@@ -55,8 +55,8 @@ const Footer = () => {
         </p>
         <p className={classes.infoParagraph}> Razvoj aplikacije:</p>
         <p className={classes.infoParagraph}>
-          <EmailLink email="bobicaleks@yahoo.com" color="white" />{" "}
-          <EmailLink email="igor.lakic2@gmail.com" color="white" />
+          <CustomLink link="bobicaleks@yahoo.com" type="email" color="white" />{" "}
+          <CustomLink link="igor.lakic2@gmail.com" type="email" color="white" />
         </p>
       </div>
     </footer>

@@ -1,7 +1,7 @@
 import React from "react";
 import Modal from "@mui/material/Modal";
 import { makeStyles } from "@mui/styles";
-import data from "../../util/data";
+import { data } from "../../util/data";
 
 const useStyles = makeStyles((theme) => ({
   servicesHolder: {

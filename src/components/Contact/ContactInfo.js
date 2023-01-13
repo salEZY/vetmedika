@@ -1,7 +1,7 @@
 import React from "react";
 import Title from "../FormsUI/Title/Title";
 import { makeStyles } from "@mui/styles";
-import EmailLink from "../FormsUI/EmailLink";
+import CustomLink from "../FormsUI/CustomLink";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -68,18 +68,21 @@ const ContactInfo = () => {
         </p>
         <p className={classes.infoP}>
           <i className="fa-thin fa-phone-rotary faIcon" style={faIcon}></i>{" "}
-          011/3822-802, 011/3822-837
+          <CustomLink link="011 3822 802" type="phone" color="black" />
+          <CustomLink link="011 3822 837" type="phone" color="black" />
         </p>
         <p className={classes.infoP}>
           <i className="fa-thin fa-mobile-screen" style={faIcon}></i>{" "}
-          063/1178-443, 064/9931-076
+          <CustomLink link="063 1178 443" type="phone" color="black" />
+          <CustomLink link="064 9931 076" type="phone" color="black" />
         </p>
         <p className={classes.infoP}>
           <i className="fa-thin fa-envelope" style={faIcon}></i>{" "}
-          <EmailLink email="info@vetmedika.rs" color="black" />
+          <CustomLink link="info@vetmedika.rs" type="email" color="black" />
         </p>
         <p className={classes.infoP}>
-          <i className="fa-thin fa-browser" style={faIcon}></i>www.vetmedika.rs
+          <i className="fa-thin fa-browser" style={faIcon}></i>
+          <CustomLink link="www.vetmedika.rs" type="web" color="black" />
         </p>
       </div>
       <div className={classes.workingHours}>
