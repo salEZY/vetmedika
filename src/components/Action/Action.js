@@ -23,11 +23,12 @@ const useStyles = makeStyles((theme) => ({
     padding: "1rem",
   },
   phoneButton: {
+    fontFamily: "Lato",
     textDecoration: "none",
     display: "block",
     width: "100%",
     fontSize: "1.5rem",
-    fontWeight: "bolder",
+    fontWeight: "normal",
     margin: "1rem auto",
     padding: "10px",
     borderRadius: "5px",

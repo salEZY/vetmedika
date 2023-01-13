@@ -18,8 +18,8 @@ const useStyles = makeStyles({
   iconHolder: {
     display: "flex",
     flexDirection: "row",
-    justifyContent: "center",
-    fontSize: "2rem",
+    justifyContent: "space-evenly",
+    fontSize: "2.5rem",
     marginTop: "1rem",
   },
   link: {

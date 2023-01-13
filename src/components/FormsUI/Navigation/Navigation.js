@@ -16,7 +16,7 @@ const Navigation = ({ customCssDiv, customCssLink }) => {
           duration={300}
           onClick={appContext.linkHandler}
         >
-          Akcije
+          Akcija
         </Link>
       </p>
 
