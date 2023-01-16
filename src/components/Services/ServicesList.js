@@ -8,14 +8,14 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     margin: "0 auto",
     padding: "1rem",
-    paddingTop: "3rem",
+    paddingTop: "1rem",
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-around",
     flexWrap: "wrap",
     [theme.breakpoints.down(700)]: {
       flexDirection: "column",
-      paddingTop: "1rem",
+      /*       paddingTop: "1rem", */
     },
   },
 }));
