@@ -16,7 +16,7 @@ const ActionsDiv = styled.div`
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  @media (max-width: 768px) {
+  @media (max-width: 700px) {
     justify-content: center;
   }
 `;

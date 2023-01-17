@@ -12,6 +12,9 @@ const ActionDiv = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @media (max-width: 700px) {
+    width: 80%;
+  }
 `;
 
 const Title = styled.h3`

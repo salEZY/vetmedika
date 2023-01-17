@@ -24,6 +24,9 @@ const CenterContainer = styled.div`
   height: max-content;
   border-radius: 10px 0px 0px 10px;
   border: 3px solid #50c878;
+  @media (max-width: 700px) {
+    border: 0;
+  }
 `;
 
 const LeftSide = styled.div`

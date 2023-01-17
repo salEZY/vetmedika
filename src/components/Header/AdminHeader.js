@@ -18,22 +18,6 @@ const AdminHeader = () => {
         <p onClick={logout} style={{ cursor: "pointer", marginRight: "1rem" }}>
           Odjava
         </p>
-
-        {/* {pages.map((page, id) => (
-            <li key={id}>
-              <Link to={page.path}>{page.label}</Link>
-            </li>
-          ))} */}
-        {/* <ul>
-          
-          {value && value !== "null" && (
-            <li>
-              <a onClick={logout} style={{ cursor: "pointer" }}>
-                Odjava
-              </a>
-            </li>
-          )}
-        </ul> */}
       </nav>
     </header>
   );

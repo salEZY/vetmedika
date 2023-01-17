@@ -10,15 +10,14 @@ const AddButton = ({ label, onClick, disabled }) => {
         background: "linear-gradient(to right, #50c878 , #50c85a)",
         transition: "none",
         padding: "5px 25px",
+        boxShadow: "none",
+        border: "2px solid #50c878",
         "&:hover": {
-          border: "2px solid #50c878",
           background: "white",
           color: "#50c878",
           boxShadow: "none",
         },
         borderRadius: "20px",
-        margin: "10px 15px",
-        border: "2px solid #50c878",
       }}
       variant="contained"
       onClick={onClick}
