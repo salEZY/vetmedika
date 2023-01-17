@@ -16,22 +16,37 @@ const CustomLink = ({ link, type, color }) => {
   const types = {
     email: "mailto:",
     phone: "tel:",
-    web: "",
+    web: "http://",
   };
 
   const hoverHandler = () => setHover(!hover);
 
   const linkStyle = hover ? { color: "#50c878" } : { color: color };
   return (
-    <a
-      href={`${types[type]}${link}`}
-      className={classes.link}
-      onMouseEnter={hoverHandler}
-      onMouseLeave={hoverHandler}
-      style={linkStyle}
-    >
-      {link}
-    </a>
+    <>
+      {type === "web" ? (
+        <a
+          href={`${types[type]}${link}`}
+          className={classes.link}
+          onMouseEnter={hoverHandler}
+          onMouseLeave={hoverHandler}
+          style={linkStyle}
+          target="_blank"
+        >
+          {link}
+        </a>
+      ) : (
+        <a
+          href={`${types[type]}${link}`}
+          className={classes.link}
+          onMouseEnter={hoverHandler}
+          onMouseLeave={hoverHandler}
+          style={linkStyle}
+        >
+          {link}
+        </a>
+      )}
+    </>
   );
 };
 

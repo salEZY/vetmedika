@@ -63,6 +63,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down(700)]: {
       width: "80%",
       fontSize: "1.2rem",
+      margin: "0 auto",
     },
   },
   icons: {
@@ -81,7 +82,7 @@ const useStyles = makeStyles((theme) => ({
     margin: "2rem auto",
     [theme.breakpoints.down(700)]: {
       fontSize: 17,
-      margin: "10px auto",
+      margin: "5px auto",
       padding: "1rem",
     },
   },
