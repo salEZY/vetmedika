@@ -1,8 +1,6 @@
 import { Grid } from "@mui/material";
 import React from "react";
 import styled from "styled-components";
-// import { useNavigate } from "react-router-dom";
-// import axios from "axios";
 import * as Yup from "yup";
 import { Formik, Form } from "formik";
 
@@ -41,36 +39,14 @@ const INITIAL_FORM_STATE = {
   password: "",
 };
 const FORM_VALIDATION = Yup.object().shape({
-  username: Yup.string()
-    // .email("Neispravna lozinka")
-    .required("Unesite email adresu"),
+  username: Yup.string().required("Unesite korisničko ime."),
   password: Yup.string()
     .required("Unesite lozinku")
     .min(5, "Lozinka mora imati minimum 5 karaktera"),
 });
 
 const Login = () => {
-  //   const navigate = useNavigate();
   const { login } = useAuth();
-  //   const login = async (values, { setErrors, resetForm }) => {
-  //     try {
-  //       const response = await axios.post("/api/user/login", values);
-  //       localStorage.setItem("token", response.data.token);
-  //       navigate("/mz/kartoni");
-  //       resetForm(INITIAL_FORM_STATE);
-  //     } catch (error) {
-  //       console.log(error);
-  //       const err = error.response.data.message.includes("Pogrešan email/lozinka")
-  //         ? "password"
-  //         : error.response.data.message.includes("Korisnik ne postoji")
-  //         ? "email"
-  //         : "";
-
-  //       setErrors({
-  //         [err]: error.response.data.message,
-  //       });
-  //     }
-  //   };
 
   return (
     <Root>
@@ -93,7 +69,7 @@ const Login = () => {
                         color: "#6B6A6A",
                       }}
                     >
-                      PRIJAVA
+                      Prijava
                     </Typography>
                   </Grid>
 
@@ -101,7 +77,7 @@ const Login = () => {
                     <TextfieldWrapper
                       name="username"
                       variant="standard"
-                      label="Email"
+                      label="Korisničko ime"
                     />
                   </Grid>
 
@@ -122,14 +98,20 @@ const Login = () => {
                       variant="contained"
                       // className={classes.buttonSub}
                       sx={{
-                        background: "#50c878",
+                        background:
+                          "linear-gradient(to right, #50c878 , #50c85a)",
                         borderRadius: "5px",
+                        border: "2px solid #50c878",
+                        boxShadow: "none",
+                        transition: "none",
                         ":hover": {
-                          background: "#50c896",
+                          background: "white",
+                          color: "#50c878",
+                          boxShadow: "none",
                         },
                       }}
                     >
-                      ULOGUJTE SE
+                      Prijavite se
                     </Button>
                   </Grid>
                 </Grid>

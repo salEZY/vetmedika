@@ -19,6 +19,7 @@ const Title = styled.h3`
   white-space: nowrap;
   overflow: hidden;
   width: 200px; /* some width */
+  margin: 10px auto;
 `;
 const Description = styled.p`
   text-overflow: ellipsis;
@@ -32,16 +33,22 @@ const AdminActionCard = ({ action, editAction, deleteAction }) => {
     <ActionDiv>
       <div>
         <Title>{action.title}</Title>
-        <Description>{action.description}</Description>
+        {/*  <Description>{action.description}</Description> */}
         <p>
           Traje od {action.from} do {action.to}
         </p>
-        <p>Aktivna: {action.active ? "Da" : "Ne"}</p>
+        <p style={{ marginTop: 10 }}>
+          Aktivna:{" "}
+          <span style={{ fontWeight: "bold" }}>
+            {" "}
+            {action.active ? "Da" : "Ne"}
+          </span>
+        </p>
       </div>
-      <div>
+      <div style={{ width: "100%", textAlign: "center" }}>
         <Button
           variant="contained"
-          style={{ marginRight: 10 }}
+          style={{ margin: "10px auto" }}
           onClick={() => editAction(action)}
         >
           Izmeni
@@ -49,6 +56,7 @@ const AdminActionCard = ({ action, editAction, deleteAction }) => {
         <Button
           color="error"
           variant="contained"
+          style={{ margin: "10px auto" }}
           onClick={() => deleteAction(action)}
         >
           Obriši

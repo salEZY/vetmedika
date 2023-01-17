@@ -18,7 +18,6 @@ const ActionsDiv = styled.div`
 `;
 
 const AdminActions = () => {
-  // const [load, setLoad] = useState(false);
   const [actions, setActions] = useState([]);
   const [addOpen, setAddOpen] = useState(false);
   const [editOpen, setEditOpen] = useState(false);
@@ -76,7 +75,7 @@ const AdminActions = () => {
           setRefresh={setRefreshState}
         />
       )}
-      <AddButton label="Nova akcija" onClick={() => setAddOpen(true)} />
+      <AddButton label="Dodaj akciju" onClick={() => setAddOpen(true)} />
 
       <ActionsDiv>
         {actions.map((action) => (

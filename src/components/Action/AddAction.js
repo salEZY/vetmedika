@@ -75,16 +75,6 @@ export default function AddAction({
                   <span className="tableRowLabel">Datum trajanja DO</span>
                   <TextfieldWrapper name="to" placeholder="DD.MM.GGGG." />
                 </div>
-                {/* <div className="checkboxRow">
-                  <span className="tableRowLabel">Aktivna</span>
-                  <Checkbox
-                    checked={values.active}
-                    onChange={(event) =>
-                      setFieldValue("active", event.target.checked)
-                    }
-                    inputProps={{ "aria-label": "controlled" }}
-                  />
-                </div> */}
 
                 <ButtonWrapper
                   type="submit"
@@ -93,9 +83,7 @@ export default function AddAction({
                   startIcon={
                     isSubmitting ? (
                       <CircularProgress size="0.9rem" />
-                    ) : (
-                      undefined
-                    )
+                    ) : undefined
                   }
                   variant="contained"
                   style={{

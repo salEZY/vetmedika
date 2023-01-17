@@ -6,11 +6,13 @@ const AddButton = ({ label, onClick, disabled }) => {
   return (
     <Button
       sx={{
-        backgroundColor: "#50c878",
+        background: "linear-gradient(to right, #50c878 , #50c85a)",
+        transition: "none",
         "&:hover": {
           border: "2px solid #50c878",
-          backgroundColor: "white",
-          color: "black",
+          background: "white",
+          color: "#50c878",
+          boxShadow: "none",
         },
         borderRadius: "20px",
         margin: "10px 0",
