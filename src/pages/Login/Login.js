@@ -98,6 +98,8 @@ const Login = () => {
                       variant="contained"
                       // className={classes.buttonSub}
                       sx={{
+                        fontFamily: "Lato",
+                        fontSize: "1.2rem",
                         background:
                           "linear-gradient(to right, #50c878 , #50c85a)",
                         borderRadius: "5px",

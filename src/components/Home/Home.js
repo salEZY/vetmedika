@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down(700)]: {
       width: "100%",
       minHeight: "70vh",
-      justifyContent: "space-around",
+      justifyContent: "space-evenly",
     },
   },
   contactButton: {

@@ -6,8 +6,10 @@ const AddButton = ({ label, onClick, disabled }) => {
   return (
     <Button
       sx={{
+        fontFamily: "Lato",
         background: "linear-gradient(to right, #50c878 , #50c85a)",
         transition: "none",
+        padding: "5px 25px",
         "&:hover": {
           border: "2px solid #50c878",
           background: "white",
@@ -15,7 +17,7 @@ const AddButton = ({ label, onClick, disabled }) => {
           boxShadow: "none",
         },
         borderRadius: "20px",
-        margin: "10px 0",
+        margin: "10px 15px",
         border: "2px solid #50c878",
       }}
       variant="contained"

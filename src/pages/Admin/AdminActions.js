@@ -13,8 +13,12 @@ const MainDiv = styled.div`
 `;
 
 const ActionsDiv = styled.div`
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 `;
 
 const AdminActions = () => {

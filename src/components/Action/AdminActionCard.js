@@ -21,19 +21,13 @@ const Title = styled.h3`
   width: 200px; /* some width */
   margin: 10px auto;
 `;
-const Description = styled.p`
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 200px; /* some width */
-`;
 
 const AdminActionCard = ({ action, editAction, deleteAction }) => {
   return (
     <ActionDiv>
       <div>
         <Title>{action.title}</Title>
-        {/*  <Description>{action.description}</Description> */}
+
         <p>
           Traje od {action.from} do {action.to}
         </p>
