@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     margin: "0 auto",
     background: "linear-gradient(to right, #50c85a, #50c878)",
-    clipPath: "polygon(0 15%, 100% 0, 100% 85%, 0% 100%)",
+    clipPath: "polygon(0 10%, 100% 0, 100% 85%, 0% 100%)",
     padding: "10px",
     display: "flex",
     justifyContent: "center",

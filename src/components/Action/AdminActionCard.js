@@ -36,13 +36,20 @@ const AdminActionCard = ({ action, editAction, deleteAction }) => {
         </p>
         <p style={{ marginTop: 10 }}>
           Aktivna:{" "}
-          <span style={{ fontWeight: "bold" }}>
+          <span style={{ fontWeight: action.active ? "bolder" : "normal" }}>
             {" "}
             {action.active ? "Da" : "Ne"}
           </span>
         </p>
       </div>
-      <div style={{ width: "100%", textAlign: "center" }}>
+      <div
+        style={{
+          width: "100%",
+          textAlign: "center",
+          display: "flex",
+          flexDirection: "column",
+        }}
+      >
         <Button
           variant="contained"
           style={{ margin: "10px auto" }}
