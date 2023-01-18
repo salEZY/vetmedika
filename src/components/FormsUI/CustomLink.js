@@ -32,8 +32,7 @@ const CustomLink = ({ link, type, color }) => {
           onMouseLeave={hoverHandler}
           style={linkStyle}
           target="_blank"
-          rel="noreferrer noopener"
-          rel="noopener"
+          rel="noopener noreferrer"
         >
           {link}
         </a>

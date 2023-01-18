@@ -5,7 +5,7 @@ import ServiceModal from "./ServiceModal";
 const useStyles = makeStyles((theme) => ({
   holder: {
     width: "20%",
-    height: "350px",
+    minHeight: "350px",
     margin: "2rem",
     padding: "5px",
     display: "flex",
@@ -30,15 +30,24 @@ const useStyles = makeStyles((theme) => ({
       height: "250px",
     },
   },
+  title: {
+    margin: "10px auto",
+    fontFamily: "Lato",
+    fontSize: "1.5rem",
+    [theme.breakpoints.down(700)]: {
+      margin: "5px auto",
+    },
+  },
   iconP: {
     fontSize: "5rem",
     margin: "1rem 0 3rem 0",
   },
   link: {
-    fontSize: "1.5rem",
+    fontSize: "1.25rem",
     margin: "1rem auto",
     [theme.breakpoints.down(700)]: {
-      fontSize: "1.25rem",
+      fontSize: "1.1rem",
+      margin: "5px auto",
     },
   },
 }));
@@ -53,6 +62,7 @@ const Service = ({ icon, title, type }) => {
 
   return (
     <div className={classes.holder} title={title} onClick={handleModal}>
+      <p className={classes.title}>{title}</p>
       <p className={classes.iconP}>
         <i className={icon} />
       </p>

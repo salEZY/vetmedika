@@ -15,7 +15,6 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: "wrap",
     [theme.breakpoints.down(700)]: {
       flexDirection: "column",
-      /*       paddingTop: "1rem", */
     },
   },
 }));
