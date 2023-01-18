@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     cursor: "pointer",
     outline: "0",
-    border: "4px solid #50c85a",
+    border: "3px solid #50c85a",
     "&:hover": {
       background: "white",
       color: "#50c878",

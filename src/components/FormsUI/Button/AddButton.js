@@ -9,15 +9,15 @@ const AddButton = ({ label, onClick, disabled }) => {
         fontFamily: "Lato",
         background: "linear-gradient(to right, #50c878 , #50c85a)",
         transition: "none",
-        padding: "5px 25px",
+        padding: "10px 25px",
         boxShadow: "none",
-        border: "2px solid #50c878",
+        border: "3px solid #50c878",
         "&:hover": {
           background: "white",
           color: "#50c878",
           boxShadow: "none",
         },
-        borderRadius: "20px",
+        borderRadius: "7.5px",
       }}
       variant="contained"
       onClick={onClick}

@@ -106,7 +106,7 @@ const Login = () => {
                         background:
                           "linear-gradient(to right, #50c878 , #50c85a)",
                         borderRadius: "5px",
-                        border: "2px solid #50c878",
+                        border: "3px solid #50c878",
                         boxShadow: "none",
                         transition: "none",
                         ":hover": {
