@@ -45,6 +45,7 @@ const useStyles = makeStyles((theme) => ({
   link: {
     fontSize: "1.25rem",
     margin: "1rem auto",
+    fontStyle: "italic",
     [theme.breakpoints.down(700)]: {
       fontSize: "1.1rem",
       margin: "5px auto",
