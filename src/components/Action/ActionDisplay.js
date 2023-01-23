@@ -13,6 +13,7 @@ const useStyles = makeStyles((theme) => ({
   },
   date: {
     fontStyle: "italic",
+    fontWeight: "600",
   },
 }));
 

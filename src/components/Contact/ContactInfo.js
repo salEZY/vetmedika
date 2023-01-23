@@ -87,9 +87,9 @@ const ContactInfo = () => {
       </div>
       <div className={classes.workingHours}>
         <h3>Radno vreme:</h3>
-        <p className={classes.infoP}>Ponedeljak-Petak 09:00 - 19:00</p>
-        <p className={classes.infoP}>Subota 10:00 - 14:00</p>
-        <p className={classes.infoP}>Nedelja 10:00 - 12:00</p>
+        <p className={classes.infoP}>Ponedeljak-Petak: 09:00 - 19:00</p>
+        <p className={classes.infoP}>Subota: 10:00 - 14:00</p>
+        <p className={classes.infoP}>Nedelja: 10:00 - 12:00</p>
       </div>
       <p className={classes.question}>
         Ukoliko imate bilo koje pitanje, ne ustručavajte se da nas pozovete.

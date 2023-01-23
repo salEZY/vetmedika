@@ -78,11 +78,11 @@ const useStyles = makeStyles((theme) => ({
   infoDiv: {
     padding: "2rem",
     fontSize: 22,
-    textAlign: "left",
+    textAlign: "justify",
     margin: "2rem auto",
     [theme.breakpoints.down(700)]: {
       fontSize: 17,
-      margin: "5px auto",
+      margin: "0",
       padding: "1rem",
     },
   },
