@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     fontStyle: "oblique",
     position: "relative !important",
     [theme.breakpoints.down(700)]: {
-      fontSize: "2rem",
+      fontSize: "2.2rem",
     },
   },
   line: {

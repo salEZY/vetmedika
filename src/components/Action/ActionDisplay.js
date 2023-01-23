@@ -4,6 +4,8 @@ import { makeStyles } from "@mui/styles";
 const useStyles = makeStyles((theme) => ({
   title: {
     margin: "1rem auto",
+    fontSize: "1.75rem",
+    fontStyle: "italic",
   },
   paragraph: {
     margin: "1rem auto",

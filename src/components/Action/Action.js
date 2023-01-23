@@ -12,15 +12,29 @@ const useStyles = makeStyles((theme) => ({
     margin: "0 auto",
     background: "linear-gradient(to right, #50c85a, #50c878)",
     clipPath: "polygon(0 10%, 100% 0, 100% 85%, 0% 100%)",
-    padding: "10px",
+    padding: "1rem",
     display: "flex",
+    flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
     color: "white",
   },
   content: {
-    margin: "2rem",
+    width: "100%",
     padding: "1rem",
+    marginBottom: "2rem",
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-evenly",
+    [theme.breakpoints.down(700)]: {
+      flexDirection: "column",
+    },
+  },
+  contactDiv: {
+    [theme.breakpoints.down(700)]: {
+      marginTop: "2rem",
+    },
   },
   phoneButton: {
     fontFamily: "Lato",
@@ -37,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     cursor: "pointer",
     outline: "0",
-    border: "4px solid white",
+    border: "3px solid white",
     "&:hover": {
       background: "white",
       color: "#50c878",
@@ -55,25 +69,33 @@ const Action = () => {
   return (
     <>
       <div className={classes.container} id="action">
+        <Title title="Akcija" cssStyle={{ margin: "1.5rem auto" }} />
         {appContext.loading ? (
           <LinearProgress
-            style={{ background: "white", height: "5px", width: "80%" }}
+            style={{
+              background: "white",
+              height: "5px",
+              width: "80%",
+            }}
           />
         ) : (
           <>
-            {appContext.action.active ? (
-              <div className={classes.content}>
-                <Title title="Akcija" cssStyle={{ margin: "2rem auto" }} />
+            <div className={classes.content}>
+              {appContext.action.active ? (
                 <ActionDisplay action={appContext.action} />
-              </div>
-            ) : (
-              <div>
-                <p style={{ fontSize: "1.5rem" }}>Uskoro nove akcije!</p>
+              ) : (
+                <p>Trenutno nema aktivne akcije</p>
+              )}
+
+              <div className={classes.contactDiv}>
+                <p style={{ fontSize: "1.25rem" }}>
+                  Pozovite nas za više informacija!
+                </p>
                 <a href="tel:011 3822 802" className={classes.phoneButton}>
                   Pozovite nas
                 </a>
               </div>
-            )}
+            </div>
           </>
         )}
       </div>

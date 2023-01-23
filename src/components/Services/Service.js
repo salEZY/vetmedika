@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     padding: "5px",
     display: "flex",
     flexDirection: "column",
-    justifyContent: "center",
+    justifyContent: "space-evenly",
     alignContent: "center",
     color: "#353935",
     cursor: "pointer",
@@ -27,23 +27,24 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down(700)]: {
       margin: "1rem auto",
       width: "90%",
-      height: "250px",
+      justifyContent: "center",
+      minHeight: "250px",
     },
   },
   title: {
     margin: "10px auto",
     fontFamily: "Lato",
-    fontSize: "1.5rem",
+    fontSize: "1.55rem",
     [theme.breakpoints.down(700)]: {
       margin: "5px auto",
     },
   },
   iconP: {
     fontSize: "5rem",
-    margin: "1rem 0 3rem 0",
+    margin: "1rem 0 1rem 0",
   },
   link: {
-    fontSize: "1.25rem",
+    fontSize: "1.2rem",
     margin: "1rem auto",
     fontStyle: "italic",
     [theme.breakpoints.down(700)]: {
