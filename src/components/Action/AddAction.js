@@ -22,13 +22,7 @@ const FORM_VALIDATION = Yup.object().shape({
   title: Yup.string().required("Obavezno polje"),
 });
 
-export default function AddAction({
-  modalOpen,
-  setModal,
-  setRefresh,
-  setSeverityHandler,
-  setSnackbarHandler,
-}) {
+export default function AddAction({ modalOpen, setModal, setRefresh }) {
   const [modalStyle] = React.useState(getModalStyle);
 
   const addAction = async (values) => {

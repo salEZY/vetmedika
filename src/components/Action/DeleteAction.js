@@ -33,22 +33,10 @@ const DeleteAction = ({
       await axios.delete(`/api/action/${id}`);
       setIsSubmitting(false);
       setModal(false);
-      // setSeverityHandler("success");
-      // setSnackbarHandler({
-      //   open: true,
-      //   message: res.data.message,
-      // });
+
       setRefresh(false);
     } catch (error) {
       console.log(error);
-      // setIsSubmitting(false);
-      // setSeverity("warning");
-      // setSnackbar({
-      //   open: true,
-      //   message: error?.response?.data?.message
-      //     ? error.response.data.message
-      //     : "Filter delete failed.",
-      // });
     }
   };
 

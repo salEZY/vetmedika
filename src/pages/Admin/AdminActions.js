@@ -31,10 +31,8 @@ const AdminActions = () => {
 
   const getActions = async () => {
     try {
-      // setLoad(true);
       const { data } = await axios.get("/api/action");
       setActions(data);
-      // setLoad(false);
     } catch (error) {
       console.log(error);
     }

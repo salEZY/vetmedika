@@ -11,11 +11,10 @@ export const AuthProvider = ({ children }) => {
   const navigate = useNavigate();
 
   const login = async (data) => {
-    // setUser(data);
     try {
       const response = await axios.post("/api/user/login", data);
       setUser(response.data.token);
-      // localStorage.setItem("user", response.data.token);
+
       navigate("/admin-panel/akcije", { replace: true });
     } catch (error) {
       console.log(error);

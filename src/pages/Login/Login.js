@@ -99,7 +99,6 @@ const Login = () => {
                       disabled={isSubmitting}
                       type="submit"
                       variant="contained"
-                      // className={classes.buttonSub}
                       sx={{
                         fontFamily: "Lato",
                         fontSize: "1.2rem",

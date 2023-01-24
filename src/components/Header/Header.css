@@ -32,10 +32,6 @@ header {
 }
 
 @media only screen and (max-width: 700px) {
-  header {
-    box-shadow: 2px 2px 3px teal;
-  }
-
   .burger {
     display: flex;
   }

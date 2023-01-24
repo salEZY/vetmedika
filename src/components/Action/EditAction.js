@@ -22,14 +22,7 @@ const FORM_VALIDATION = Yup.object().shape({
   title: Yup.string().required("Obavezno polje"),
 });
 
-export default function EditAction({
-  data,
-  modalOpen,
-  setModal,
-  setRefresh,
-  setSeverityHandler,
-  setSnackbarHandler,
-}) {
+export default function EditAction({ data, modalOpen, setModal, setRefresh }) {
   const [modalStyle] = React.useState(getModalStyle);
 
   const editAction = async (values) => {
@@ -84,9 +77,7 @@ export default function EditAction({
                   startIcon={
                     isSubmitting ? (
                       <CircularProgress size="0.9rem" />
-                    ) : (
-                      undefined
-                    )
+                    ) : undefined
                   }
                   variant="contained"
                   style={{
