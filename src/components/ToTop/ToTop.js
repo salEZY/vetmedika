@@ -22,9 +22,9 @@ const ToTop = () => {
         if (
           window.scrollY >
           document.body.scrollHeight -
-            (footer.offsetHeight + contact.offsetHeight + 200)
+            (footer.offsetHeight + contact.offsetHeight)
         ) {
-          btnBottom = (footer.offsetHeight + 20).toString() + "px";
+          btnBottom = footer.offsetHeight.toString() + "px";
           setRight("35px");
           setBottom(btnBottom);
         } else {
@@ -46,7 +46,7 @@ const ToTop = () => {
         document.documentElement.scrollTop = 0;
       }}
     >
-      <i className="fa-sharp fa-circle-chevron-up" id="arrow"></i>
+      <i className="fa-thin fa-square-chevron-up" id="arrow"></i>
     </span>
   );
 };

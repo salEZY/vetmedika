@@ -4,7 +4,7 @@ import { makeStyles } from "@mui/styles";
 const useStyles = makeStyles((theme) => ({
   link: {
     textDecoration: "none",
-    transition: "0.2s all ease",
+    transition: "all 0.2s ease",
     margin: "0 5px",
   },
 }));

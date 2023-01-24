@@ -5,12 +5,10 @@
   position: fixed;
   font-size: 50px;
   z-index: 10000;
-  padding: 5px;
   transition: all 300ms ease-in-out;
 }
 
 #arrow {
-  color: #50c878;
   font-size: 4rem;
 }
 

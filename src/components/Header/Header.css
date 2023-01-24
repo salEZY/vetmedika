@@ -6,6 +6,7 @@ header {
   background: linear-gradient(to right, #50c878, #50c85a);
   color: white;
   justify-content: space-between;
+  box-shadow: 2px 2px 4px teal;
 }
 
 .nav-holder {
@@ -31,6 +32,10 @@ header {
 }
 
 @media only screen and (max-width: 700px) {
+  header {
+    box-shadow: 2px 2px 3px teal;
+  }
+
   .burger {
     display: flex;
   }

@@ -14,7 +14,8 @@ const useStyles = makeStyles((theme) => ({
     alignContent: "center",
     color: "#353935",
     cursor: "pointer",
-    transition: ".2 all ease",
+    boxShadow: "2px 2px 4px gray",
+    transition: "all .1s ease-in",
     "&:hover": {
       color: "#50c878",
       borderColor: "#50c878",
@@ -37,6 +38,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "1.55rem",
     [theme.breakpoints.down(700)]: {
       margin: "5px auto",
+      fontSize: "1.3rem",
     },
   },
   iconP: {
@@ -48,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
     margin: "1rem auto",
     fontStyle: "italic",
     [theme.breakpoints.down(700)]: {
-      fontSize: "1.1rem",
+      fontSize: "1rem",
       margin: "5px auto",
     },
   },

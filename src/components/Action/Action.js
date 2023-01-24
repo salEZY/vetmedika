@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
   },
   contactDiv: {
     [theme.breakpoints.down(700)]: {
-      marginTop: "2rem",
+      marginTop: "3rem",
     },
   },
   phoneButton: {
@@ -46,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
     margin: "1rem auto",
     padding: "10px",
     borderRadius: "5px",
-    transition: ".2s all ease",
+    transition: "all .1s ease-in",
     background: "linear-gradient(to right, #50c878 , #50c85a)",
     color: "white",
     cursor: "pointer",
@@ -58,6 +58,12 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down(700)]: {
       fontSize: "1.2rem",
+    },
+  },
+  contactPara: {
+    fontSize: "1.25rem",
+    [theme.breakpoints.down(700)]: {
+      fontSize: "1.1rem",
     },
   },
 }));
@@ -88,7 +94,7 @@ const Action = () => {
               )}
 
               <div className={classes.contactDiv}>
-                <p style={{ fontSize: "1.25rem" }}>
+                <p className={classes.contactPara}>
                   Pozovite nas za više informacija!
                 </p>
                 <a href="tel:011 3822 802" className={classes.phoneButton}>
