@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     alignContent: "center",
     color: "#353935",
     cursor: "pointer",
-    boxShadow: "2px 2px 4px gray",
+    boxShadow: "2px 2px 4px #5b625b",
     transition: "all .1s ease-in",
     "&:hover": {
       color: "#50c878",

@@ -13,14 +13,16 @@ const useStyles = makeStyles({
     background: "linear-gradient(to right, #50c85a, #50c878)",
   },
   modalHolder: {
-    marginTop: "15vh",
+    height: "100%",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-evenly",
   },
   iconHolder: {
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-evenly",
-    fontSize: "2.5rem",
-    marginTop: "1rem",
+    fontSize: "3rem",
   },
   link: {
     textDecoration: "none",

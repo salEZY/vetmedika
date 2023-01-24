@@ -6,7 +6,7 @@ header {
   background: linear-gradient(to right, #50c878, #50c85a);
   color: white;
   justify-content: space-between;
-  box-shadow: 2px 2px 4px teal;
+  box-shadow: 2px 2px 4px #5b625b;
 }
 
 .nav-holder {
