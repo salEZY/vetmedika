@@ -46,7 +46,7 @@ const ToTop = () => {
         document.documentElement.scrollTop = 0;
       }}
     >
-      <i className="fa-thin fa-square-chevron-up" id="arrow"></i>
+      <i className="fa-sharp fa-square-chevron-up" id="arrow"></i>
     </span>
   );
 };
