@@ -98,7 +98,7 @@ const Action = () => {
                   Pozovite nas za više informacija!
                 </p>
                 <a href="tel:011 3822 802" className={classes.phoneButton}>
-                  Pozovite nas
+                  Pozovi
                 </a>
               </div>
             </div>

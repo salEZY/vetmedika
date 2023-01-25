@@ -14,14 +14,13 @@ const useStyles = makeStyles((theme) => ({
     alignContent: "center",
     color: "#353935",
     cursor: "pointer",
-    boxShadow: "2px 2px 4px #5b625b",
+    boxShadow: "1px 1px 2px #5b625b",
     transition: "all .2s ease-in",
     "&:hover": {
       color: "#50c878",
-      boxShadow: "4px 4px 15px #5b625b",
+      boxShadow: "2px 2px 6px #5b625b",
     },
-    border: "3px solid #353935",
-    borderRadius: "5px",
+    borderRadius: "2px",
     [theme.breakpoints.down(1000)]: {
       width: "30%",
     },
