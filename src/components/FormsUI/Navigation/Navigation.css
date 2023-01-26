@@ -34,28 +34,8 @@
   transition: 0.25s, mask-size 0.25s 0.25s;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #50c878;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: #50c878;
+.nav p:first-child {
+  animation: actionHighlight 3s infinite ease;
 }
 
 @media only screen and (max-width: 700px) {

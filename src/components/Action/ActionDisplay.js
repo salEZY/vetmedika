@@ -4,12 +4,14 @@ import { makeStyles } from "@mui/styles";
 const useStyles = makeStyles((theme) => ({
   title: {
     margin: "1rem auto",
-    fontSize: "1.75rem",
+    fontSize: "2rem",
     fontStyle: "italic",
+    animation: "actionHighlight 2s infinite ease",
   },
   paragraph: {
     margin: "1rem auto",
-    fontSize: "1.25rem",
+    fontSize: "1.3rem",
+    animation: "actionHighlight 2s infinite ease",
   },
   date: {
     fontStyle: "italic",

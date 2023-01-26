@@ -10,3 +10,15 @@ p {
   --titlePrimary: #50c878;
   --titleAction: #fff;
 }
+
+@keyframes actionHighlight {
+  0% {
+    text-shadow: none;
+  }
+  50% {
+    text-shadow: 5px 5px 10px black;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
