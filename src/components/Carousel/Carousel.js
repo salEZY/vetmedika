@@ -6,6 +6,7 @@ import baner2 from "../../assets/newAssets/baner2.jpg";
 import baner3 from "../../assets/newAssets/baner3.jpg";
 import baner4 from "../../assets/newAssets/baner4.jpg";
 import baner5 from "../../assets/newAssets/baner5.jpg";
+import baner6 from "../../assets/newAssets/baner6.jpg";
 
 const CarouselComponent = () => {
   return (
@@ -19,6 +20,9 @@ const CarouselComponent = () => {
     >
       <div>
         <img src={baner5} alt="baner5" />
+      </div>
+      <div>
+        <img src={baner6} alt="baner6" />
       </div>
       <div>
         <img src={baner1} alt="baner1" />
