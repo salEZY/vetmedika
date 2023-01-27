@@ -17,7 +17,8 @@ const AddButton = ({ label, onClick, disabled }) => {
           color: "#50c878",
           boxShadow: "none",
         },
-        borderRadius: "7.5px",
+        borderRadius: "5px",
+        margin: "10px auto",
       }}
       variant="contained"
       onClick={onClick}

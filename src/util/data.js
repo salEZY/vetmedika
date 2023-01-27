@@ -33,8 +33,8 @@ export const data = {
     "Onkološka hirurgija",
   ],
   xray: [
-    "Ultrazvučna dijagnostika se najčešće koristi za pregled mekih tkiva. Tako što daje dvodimenzionalnu sliku ultrazvuk koristimo za vizuelizaciju organa u stomaku (bubrega, jetre, slezine, želudca, creva, pankreasa, mokraćne bešike, materice) i u grudnoj duplji (srce)",
-    "Ova metoda se uspešno koristi u dijagnostici graviditeta, kao i praćenju vitalnosti plodova( praćenje fetalnih srčanih akcija ). Pomoćne metoda je ubacivanje kontrasta u voluminozne organe (insufliranje vazduha ili tečnosti) te procena stanja zidova ovih organa",
+    "Ultrazvučna dijagnostika se najčešće koristi za pregled mekih tkiva tako što daje dvodimenzionalnu sliku. Ultrazvuk koristimo za vizuelizaciju organa u stomaku (bubrega, jetre, slezine, želudca, creva, pankreasa, mokraćne bešike, materice) i u grudnoj duplji (srce)",
+    "Ova metoda se uspešno koristi u dijagnostici graviditeta, kao i praćenju vitalnosti plodova (praćenje fetalnih srčanih akcija). Pomoćna metoda je ubacivanje kontrasta u voluminozne organe (insufliranje vazduha ili tečnosti) te procena stanja zidova ovih organa",
     "Druge regije kao što su oči, štitna žlezda, mlečna žlezda i testisi mogu se pregledati ovom metodom veoma uspešno",
     "Rendgenska dijagnostika: Kao pomoćno dijagnostičko sredstvo omogućava precizniju dijagnozu, korišćenjem nativne i kontrastne tehnike. Najčešće metode: kontrast digestivnog sistema, mijelografija, pijelografija, pneumokontrastna dijagnostika.",
   ],

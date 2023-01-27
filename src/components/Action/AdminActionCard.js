@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 
 const ActionDiv = styled.div`
-  width: 200px;
+  min-width: 200px;
   min-height: 200px;
   border: 4px solid #50c878;
   padding: 15px;
@@ -11,9 +11,12 @@ const ActionDiv = styled.div`
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  word-wrap: break-word;
+  text-align: center;
   justify-content: space-between;
   @media (max-width: 700px) {
     width: 80%;
+    margin: 10px auto;
   }
 `;
 
@@ -21,8 +24,11 @@ const Title = styled.h3`
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  width: 200px; /* some width */
+  width: 250px; /* some width */
   margin: 10px auto;
+  @media (max-width: 700px) {
+    width: 100%;
+  }
 `;
 
 const AdminActionCard = ({ action, editAction, deleteAction }) => {
@@ -47,7 +53,7 @@ const AdminActionCard = ({ action, editAction, deleteAction }) => {
           width: "100%",
           textAlign: "center",
           display: "flex",
-          flexDirection: "column",
+          flexDirection: "row",
         }}
       >
         <Button

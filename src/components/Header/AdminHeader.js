@@ -11,7 +11,10 @@ const AdminHeader = () => {
     <header>
       <Logo />
       <nav className="nav">
-        <p onClick={logout} style={{ cursor: "pointer", marginRight: "1rem" }}>
+        <p
+          onClick={logout}
+          style={{ cursor: "pointer", marginRight: "1rem", animation: "none" }}
+        >
           Odjava
         </p>
       </nav>

@@ -6,12 +6,12 @@ const useStyles = makeStyles((theme) => ({
     margin: "1rem auto",
     fontSize: "2rem",
     fontStyle: "italic",
-    animation: "actionHighlight 2s infinite ease",
+    animation: "actionHighlight 1.5s infinite ease",
   },
   paragraph: {
     margin: "1rem auto",
     fontSize: "1.3rem",
-    animation: "actionHighlight 2s infinite ease",
+    animation: "actionHighlight 1.5s infinite ease",
   },
   date: {
     fontStyle: "italic",
