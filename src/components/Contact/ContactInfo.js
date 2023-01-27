@@ -68,13 +68,14 @@ const ContactInfo = () => {
         </p>
         <p className={classes.infoP}>
           <i className="fa-thin fa-phone-rotary faIcon" style={faIcon}></i>{" "}
-          <CustomLink link="011 3822 802" type="phone" color="black" />
-          <CustomLink link="011 3822 837" type="phone" color="black" />
+          <CustomLink link="011 3822802" type="phone" color="black" />
+          <CustomLink link="011 3822837" type="phone" color="black" />
         </p>
         <p className={classes.infoP}>
           <i className="fa-thin fa-mobile-screen" style={faIcon}></i>{" "}
-          <CustomLink link="063 1178 443" type="phone" color="black" />
-          <CustomLink link="064 9931 076" type="phone" color="black" />
+          {/* <CustomLink link="063 1178 443" type="phone" color="black" />
+          <CustomLink link="064 9931 076" type="phone" color="black" /> */}
+          Telefon za hitne intervencije uskoro!!!
         </p>
         <p className={classes.infoP}>
           <i className="fa-thin fa-envelope" style={faIcon}></i>{" "}
