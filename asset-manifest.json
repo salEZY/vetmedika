@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/vetmedika/static/css/main.bf3068e7.css",
-    "main.js": "/vetmedika/static/js/main.05880f81.js",
-    "static/media/baner4.jpg": "/vetmedika/static/media/baner4.f34fb21e973216d11f8a.jpg",
-    "static/media/baner3.jpg": "/vetmedika/static/media/baner3.0e749d731ce302d5fe42.jpg",
-    "static/media/baner1.jpg": "/vetmedika/static/media/baner1.a3993d4ce0e325868e06.jpg",
-    "static/media/baner2.jpg": "/vetmedika/static/media/baner2.60e15595c705c4b1a9f0.jpg",
-    "static/media/baner5.jpg": "/vetmedika/static/media/baner5.4a6de7987e8f7886de68.jpg",
-    "static/media/baner6.jpg": "/vetmedika/static/media/baner6.af7351846e50d8a31f10.jpg",
-    "static/media/Lato-Regular.ttf": "/vetmedika/static/media/Lato-Regular.9d883d540ee2b4de8024.ttf",
-    "static/media/logo.png": "/vetmedika/static/media/logo.145783ae0bcbb7f8fca6.png",
-    "index.html": "/vetmedika/index.html",
-    "main.bf3068e7.css.map": "/vetmedika/static/css/main.bf3068e7.css.map",
-    "main.05880f81.js.map": "/vetmedika/static/js/main.05880f81.js.map"
+    "main.css": "/static/css/main.1816adb6.css",
+    "main.js": "/static/js/main.59ecac41.js",
+    "static/media/baner4.jpg": "/static/media/baner4.f34fb21e973216d11f8a.jpg",
+    "static/media/baner3.jpg": "/static/media/baner3.0e749d731ce302d5fe42.jpg",
+    "static/media/baner1.jpg": "/static/media/baner1.a3993d4ce0e325868e06.jpg",
+    "static/media/baner2.jpg": "/static/media/baner2.60e15595c705c4b1a9f0.jpg",
+    "static/media/baner5.jpg": "/static/media/baner5.4a6de7987e8f7886de68.jpg",
+    "static/media/baner6.jpg": "/static/media/baner6.af7351846e50d8a31f10.jpg",
+    "static/media/Lato-Regular.ttf": "/static/media/Lato-Regular.9d883d540ee2b4de8024.ttf",
+    "static/media/logo.png": "/static/media/logo.145783ae0bcbb7f8fca6.png",
+    "index.html": "/index.html",
+    "main.1816adb6.css.map": "/static/css/main.1816adb6.css.map",
+    "main.59ecac41.js.map": "/static/js/main.59ecac41.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf3068e7.css",
-    "static/js/main.05880f81.js"
+    "static/css/main.1816adb6.css",
+    "static/js/main.59ecac41.js"
   ]
 }
