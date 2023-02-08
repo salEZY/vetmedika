@@ -139,7 +139,9 @@ const Home = () => {
             duration={300}
             style={{ width: "100%" }}
           >
-            <button className={classes.contactButton}>Kontakt</button>
+            <button className={classes.contactButton}>
+              Kontakt <i className="fa-sharp fa-regular fa-circle-info"></i>
+            </button>
           </Link>
         </div>
       </div>

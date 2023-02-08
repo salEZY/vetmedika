@@ -59,30 +59,33 @@ const ContactInfo = () => {
       <Title title="Kontakt" cssStyle={{ margin: "1rem auto" }} />
       <div className={classes.info}>
         <p className={classes.infoP}>
-          <i className="fa-thin fa-city" style={faIcon}></i> 11000 Beograd,
-          Srbija
+          <i className="fa-sharp fa-regular fa-city" style={faIcon}></i> 11000
+          Beograd, Srbija
         </p>
         <p className={classes.infoP}>
-          <i className="fa-thin fa-location-pin" style={faIcon}></i>Vojvode
-          Šupljikca 43, Vračar
+          <i className="fa-sharp fa-regular fa-location-pin" style={faIcon}></i>
+          Vojvode Šupljikca 43, Vračar
         </p>
         <p className={classes.infoP}>
-          <i className="fa-thin fa-phone-rotary faIcon" style={faIcon}></i>{" "}
+          <i className="fa-sharp fa-regular fa-phone-rotary" style={faIcon}></i>{" "}
           <CustomLink link="011 3822802" type="phone" color="black" />
           <CustomLink link="011 3822837" type="phone" color="black" />
         </p>
         <p className={classes.infoP}>
-          <i className="fa-thin fa-mobile-screen" style={faIcon}></i>{" "}
+          <i
+            className="fa-sharp fa-regular fa-mobile-screen"
+            style={faIcon}
+          ></i>{" "}
           {/* <CustomLink link="063 1178 443" type="phone" color="black" />
           <CustomLink link="064 9931 076" type="phone" color="black" /> */}
-          Telefon za hitne intervencije uskoro!!!
+          Telefon za hitne intervencije uskoro!
         </p>
         <p className={classes.infoP}>
-          <i className="fa-thin fa-envelope" style={faIcon}></i>{" "}
+          <i className="fa-sharp fa-regular fa-envelope" style={faIcon}></i>{" "}
           <CustomLink link="info@vetmedika.rs" type="email" color="black" />
         </p>
         <p className={classes.infoP}>
-          <i className="fa-thin fa-browser" style={faIcon}></i>
+          <i className="fa-sharp fa-regular fa-browser" style={faIcon}></i>
           <CustomLink link="www.vetmedika.rs" type="web" color="black" />
         </p>
       </div>

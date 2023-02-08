@@ -90,7 +90,9 @@ const Action = () => {
               {appContext.action.active ? (
                 <ActionDisplay action={appContext.action} />
               ) : (
-                <p>Trenutno nema aktivne akcije</p>
+                <p style={{ fontSize: "1.5rem" }}>
+                  Trenutno nema aktivne akcije.
+                </p>
               )}
 
               <div className={classes.contactDiv}>
@@ -98,7 +100,7 @@ const Action = () => {
                   Pozovite nas za više informacija!
                 </p>
                 <a href="tel:011 3822802" className={classes.phoneButton}>
-                  Pozovi
+                  Pozovi <i className="fa-sharp fa-regular fa-phone"></i>
                 </a>
               </div>
             </div>
