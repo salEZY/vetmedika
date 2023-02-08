@@ -24,7 +24,7 @@ const Logo = () => {
 
   return (
     <div className={classes.logo}>
-      <a href="/vetmedika">
+      <a href="/">
         <img src={imgSrc} alt="Vetmedika logo" />
       </a>
     </div>
