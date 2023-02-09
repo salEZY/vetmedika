@@ -115,7 +115,8 @@ const Login = () => {
                         },
                       }}
                     >
-                      Prijavite se
+                      Prijavite se{" "}
+                      <i className="fa-regular fa-arrow-right-to-arc"></i>
                     </Button>
                   </Grid>
                 </Grid>
