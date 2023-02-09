@@ -15,7 +15,11 @@ const AdminHeader = () => {
           onClick={logout}
           style={{ cursor: "pointer", marginRight: "1rem", animation: "none" }}
         >
-          Odjava
+          Odjava{" "}
+          <i
+            className="fa-sharp fa-solid fa-right-from-bracket"
+            style={{ marginLeft: "5px" }}
+          ></i>
         </p>
       </nav>
     </header>

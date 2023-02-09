@@ -115,8 +115,11 @@ const Login = () => {
                         },
                       }}
                     >
-                      Prijavite se{" "}
-                      <i className="fa-regular fa-arrow-right-to-arc"></i>
+                      Prijava{" "}
+                      <i
+                        className="fa-sharp fa-solid fa-arrow-right-to-bracket"
+                        style={{ marginLeft: "5px" }}
+                      ></i>
                     </Button>
                   </Grid>
                 </Grid>

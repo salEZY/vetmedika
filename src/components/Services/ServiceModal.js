@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
   },
   item: {
     width: "100%",
-    textAlign: "left",
+    textAlign: "justify",
     margin: "10px auto",
     fontSize: "1.2rem",
     [theme.breakpoints.down(700)]: {
