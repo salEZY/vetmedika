@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import {
   ThemeProvider,
   createTheme,
@@ -43,6 +43,7 @@ function App() {
               <Route element={<HomeLayout />}>
                 <Route path="" element={<AllPages />} />
                 <Route path="/prijava" element={<Login />} />
+                <Route path="*" element={<Navigate to="/" replace />} />
               </Route>
 
               <Route path="/admin-panel" element={<ProtectedLayout />}>
