@@ -49,7 +49,7 @@ export const data = {
     "Promene pigmentacije",
     "Alergije na buve i kontrola buva",
     "Ostali kožni paraziti",
-    "Otoci na koži- Brisevi kože i njihov mikroskopski pregled",
+    "Otoci na koži - brisevi kože i njihov mikroskopski pregled",
   ],
   grooming: [
     "Odgovarajuća nega dlake ne čini samo da vaš ljubimac izgleda lepo, već doprinosi njegovom zdravlju. Vaš pas će biti puno veseliji sa urednim dlačnim pokrivačem, a redovnim održavanjem se mogu otkriti i potencijalni problemi na koži koji bi drugačije ostali neotkriveni",
