@@ -11,13 +11,13 @@ const AddButton = ({ label, onClick, disabled }) => {
         transition: "none",
         padding: "10px 25px",
         boxShadow: "none",
-        border: "3px solid #50c878",
+        border: "2px solid #50c878",
         "&:hover": {
           background: "white",
           color: "#50c878",
           boxShadow: "none",
         },
-        borderRadius: "5px",
+        borderRadius: "2px",
         margin: "10px auto",
       }}
       variant="contained"

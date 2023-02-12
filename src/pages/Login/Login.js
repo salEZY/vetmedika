@@ -22,7 +22,7 @@ const CenterContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: max-content;
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 2px;
   border: 3px solid #50c878;
   @media (max-width: 700px) {
     border: 0;
@@ -104,8 +104,8 @@ const Login = () => {
                         fontSize: "1.2rem",
                         background:
                           "linear-gradient(to right, #50c878 , #50c85a)",
-                        borderRadius: "5px",
-                        border: "3px solid #50c878",
+                        borderRadius: "2px",
+                        border: "2px solid #50c878",
                         boxShadow: "none",
                         transition: "none",
                         ":hover": {

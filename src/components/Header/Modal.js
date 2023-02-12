@@ -53,7 +53,7 @@ const Modal = () => {
             <i
               className="fa-thin fa-map-location"
               style={{ margin: "0 1rem", cursor: "pointer" }}
-              title="Lokacija ordinacije"
+              title="Lokacija ambulante"
             ></i>
           </a>
           <a href="mailto:info@vetmedika.rs" className={classes.link}>

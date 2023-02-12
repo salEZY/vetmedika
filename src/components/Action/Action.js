@@ -45,19 +45,20 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "normal",
     margin: "1rem auto",
     padding: "10px",
-    borderRadius: "5px",
+    borderRadius: "2px",
     transition: "all .1s ease-in",
     background: "linear-gradient(to right, #50c878 , #50c85a)",
     color: "white",
     cursor: "pointer",
     outline: "0",
-    border: "3px solid white",
+    border: "2px solid white",
     "&:hover": {
       background: "white",
       color: "#50c878",
     },
     [theme.breakpoints.down(700)]: {
       fontSize: "1.2rem",
+      marginBottom: "2rem",
     },
   },
   contactPara: {

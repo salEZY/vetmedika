@@ -8,7 +8,7 @@ const ActionDiv = styled.div`
   border: 4px solid #50c878;
   padding: 15px;
   margin: 15px;
-  border-radius: 10px;
+  border-radius: 2px;
   display: flex;
   flex-direction: column;
   word-wrap: break-word;

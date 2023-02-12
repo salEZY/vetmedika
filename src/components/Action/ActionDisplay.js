@@ -8,18 +8,27 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "2rem",
     fontStyle: "italic",
     animation: "actionHighlight 1.5s infinite ease",
+    [theme.breakpoints.down(700)]: {
+      fontSize: "1.75rem",
+    },
   },
   paragraph: {
     textAlign: "left",
     margin: "1rem auto",
     fontSize: "1.4rem",
     animation: "actionHighlight 1.5s infinite ease",
+    [theme.breakpoints.down(700)]: {
+      fontSize: "1.25rem",
+    },
   },
 
   dateParagraph: {
     textAlign: "left",
     fontSize: "1.15rem",
     animation: "actionHighlight 1.5s infinite ease",
+    [theme.breakpoints.down(700)]: {
+      fontSize: "1.1rem",
+    },
   },
   date: {
     fontStyle: "italic",

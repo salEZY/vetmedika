@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     padding: "2rem",
     background: "white",
     border: "none",
-    borderRadius: "10px",
+    borderRadius: "2px",
     [theme.breakpoints.down(700)]: {
       padding: "10px",
       margin: "1rem auto",
