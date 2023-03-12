@@ -24,12 +24,10 @@ header {
   align-items: center;
   font-size: 2.5rem;
   padding-right: 2rem;
-  transition: all 0.2s ease-in-out;
 }
 
 #burger-btn {
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
 }
 
 .burger-div-border {
