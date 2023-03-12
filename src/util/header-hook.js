@@ -3,14 +3,25 @@ import { useState } from "react";
 export const useHeader = () => {
   const [burger, setBurger] = useState(false);
   const [modal, setModal] = useState(false);
+  const [barTop, setBarTop] = useState("bars");
+  const [barBottom, setBarBottom] = useState("bars");
+  const [burgerDiv, setBurgerDiv] = useState("");
 
   const headerHandler = () => {
     setBurger(!burger);
     setModal(!modal);
 
-    !modal
-      ? document.body.setAttribute("class", "remove-scroll")
-      : document.body.removeAttribute("class");
+    if (!modal) {
+      setBurgerDiv("burger-div-border");
+      setBarTop("bars animate-top");
+      setBarBottom("bars animate-bottom");
+      document.body.setAttribute("class", "remove-scroll");
+    } else {
+      setBurgerDiv("");
+      setBarTop("bars");
+      setBarBottom("bars");
+      document.body.removeAttribute("class");
+    }
   };
 
   const linkHandler = () => {
@@ -20,5 +31,13 @@ export const useHeader = () => {
     document.body.removeAttribute("class");
   };
 
-  return { burger, modal, headerHandler, linkHandler };
+  return {
+    burger,
+    modal,
+    barTop,
+    burgerDiv,
+    barBottom,
+    headerHandler,
+    linkHandler,
+  };
 };

@@ -21,17 +21,22 @@ const Header = () => {
 
       <div className="burger">
         {!window.location.href.includes("/prijava") && (
-          <>
-            <i
+          <div
+            id="burger-btn"
+            onClick={appCtx.headerHandler}
+            className={appCtx.burgerDiv}
+          >
+            {/*  <i
               className={
                 appCtx.burger
                   ? "fa-sharp fa-solid fa-xmark-large"
                   : "fa-sharp fa-solid fa-bars-staggered"
               }
-              id="burger-btn"
               onClick={appCtx.headerHandler}
-            ></i>
-          </>
+            ></i> */}
+            <p className={appCtx.barTop}></p>
+            <p className={appCtx.barBottom}></p>
+          </div>
         )}
       </div>
       {appCtx.modal && <Modal />}

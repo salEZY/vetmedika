@@ -21,7 +21,15 @@ const theme = createTheme();
 
 function App() {
   const { action, loading } = useAction();
-  const { burger, modal, headerHandler, linkHandler } = useHeader();
+  const {
+    burger,
+    barTop,
+    barBottom,
+    modal,
+    burgerDiv,
+    headerHandler,
+    linkHandler,
+  } = useHeader();
   const { width } = useWidth();
 
   return (
@@ -32,6 +40,9 @@ function App() {
             loading: loading,
             action: action,
             burger: burger,
+            barTop: barTop,
+            barBottom: barBottom,
+            burgerDiv: burgerDiv,
             modal: modal,
             width: width,
             headerHandler: headerHandler,

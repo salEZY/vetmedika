@@ -32,6 +32,26 @@ header {
   transition: all 0.2s ease-in-out;
 }
 
+.burger-div-border {
+  margin-bottom: 10px;
+}
+.bars {
+  transition: all 0.1s ease-in;
+  padding: 2px;
+  width: 50px;
+  background-color: white;
+  margin: 10px auto;
+  display: block;
+}
+
+.animate-top {
+  transform: translateY(14px) rotate(45deg);
+}
+
+.animate-bottom {
+  transform: rotate(-45deg);
+}
+
 @media only screen and (max-width: 700px) {
   .burger {
     display: flex;
