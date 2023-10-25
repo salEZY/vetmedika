@@ -27,6 +27,9 @@ export const useHeader = () => {
   const linkHandler = () => {
     setBurger(false);
     setModal(false);
+    setBurgerDiv("");
+    setBarTop("bars");
+    setBarBottom("bars");
 
     document.body.removeAttribute("class");
   };

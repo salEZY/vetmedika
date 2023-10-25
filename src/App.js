@@ -5,17 +5,19 @@ import {
   createTheme,
   StyledEngineProvider,
 } from "@mui/material/styles";
-
-import "./App.css";
-import AllPages from "./components/AllPages/AllPages";
-import Login from "./pages/Login/Login";
-import AdminActions from "./pages/Admin/AdminActions";
 import { HomeLayout } from "./routing/HomeLayout";
 import { ProtectedLayout } from "./routing/ProtectedLayout";
 import { AppContext } from "./util/app-context";
 import { useAction } from "./util/action-hook";
 import { useHeader } from "./util/header-hook";
 import { useWidth } from "./util/width-hook";
+import "./App.css";
+// import AllPages from "./components/AllPages/AllPages";
+// import Login from "./pages/Login/Login";
+// import AdminActions from "./pages/Admin/AdminActions";
+const AllPages = React.lazy(() => import("./components/AllPages/AllPages"));
+const Login = React.lazy(() => import("./pages/Login/Login"));
+const AdminActions = React.lazy(() => import("./pages/Admin/AdminActions"));
 
 const theme = createTheme();
 
@@ -49,19 +51,21 @@ function App() {
             linkHandler: linkHandler,
           }}
         >
-          <div className="App">
-            <Routes>
-              <Route element={<HomeLayout />}>
-                <Route path="" element={<AllPages />} />
-                <Route path="/prijava" element={<Login />} />
-                <Route path="*" element={<Navigate to="/" replace />} />
-              </Route>
+          <React.Suspense fallback={<div>...Loading</div>}>
+            <div className='App'>
+              <Routes>
+                <Route element={<HomeLayout />}>
+                  <Route path='' element={<AllPages />} />
+                  <Route path='/prijava' element={<Login />} />
+                  <Route path='*' element={<Navigate to='/' replace />} />
+                </Route>
 
-              <Route path="/admin-panel" element={<ProtectedLayout />}>
-                <Route path="akcije" element={<AdminActions />} />
-              </Route>
-            </Routes>
-          </div>
+                <Route path='/admin-panel' element={<ProtectedLayout />}>
+                  <Route path='akcije' element={<AdminActions />} />
+                </Route>
+              </Routes>
+            </div>
+          </React.Suspense>
         </AppContext.Provider>
       </StyledEngineProvider>
     </ThemeProvider>
